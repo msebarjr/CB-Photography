@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
