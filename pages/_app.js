@@ -1,5 +1,5 @@
 import MainContainer from "../components/helper/MainContainer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navigation/Navbar";
 
 import "../styles/globals.css";
 
