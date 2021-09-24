@@ -1,6 +1,8 @@
 import Head from "next/head";
 
 import Hero from "../components/Hero";
+import Profile from "../components/Profile";
+import Recognition from "../components/Recognition";
 
 import aboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
 
@@ -17,6 +19,10 @@ export default function About() {
                 alt="Boardwalk Ocean City, NY"
                 position="50% 55%"
             />
+            <div className="info">
+                <Profile />
+                <Recognition />
+            </div>
         </>
     );
 }
