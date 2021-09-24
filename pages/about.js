@@ -11,12 +11,12 @@ export default function About() {
                 <title>CB Photography | About</title>
             </Head>
 
-            {/* <Hero
+            <Hero
                 title="About"
                 image={aboutHeroImage}
                 alt="Boardwalk Ocean City, NY"
                 position="50% 55%"
-            /> */}
+            />
         </>
     );
 }
