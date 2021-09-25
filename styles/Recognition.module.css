@@ -15,7 +15,8 @@
 }
 
 .info {
-    max-width: 16ch;
+    width: 16ch;
+    /* max-width: 16ch; */
     line-height: 1.5;
     margin-top: 0.5em;
     text-align: center;
@@ -24,4 +25,40 @@
 .info span {
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 975px) {
+    .icon {
+        font-size: 1.5rem;
+        padding: 0.75em;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+
+    .info span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .icon {
+        font-size: 1.25rem;
+        padding: 0.75em;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+
+    .info span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        margin-top: 1.75rem;
+    }
 }

@@ -41,6 +41,12 @@ textarea {
 
 .container {
     width: 100%;
-
     padding: 0 7rem;
+    position: relative;
+}
+
+@media screen and (max-width: 1160px) {
+    .container {
+        padding: 0 3.5rem;
+    }
 }

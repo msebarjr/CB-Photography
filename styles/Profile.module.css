@@ -8,3 +8,26 @@
 .photo {
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1275px) {
+    .profile {
+        width: 300px;
+        height: 300px;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .profile {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .profile {
+        margin-top: 1rem;
+        width: 175px;
+        height: 175px;
+    }
+}
