@@ -1,0 +1,12 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recognition {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

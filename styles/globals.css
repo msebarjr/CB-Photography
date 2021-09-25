@@ -38,3 +38,9 @@ textarea {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+.container {
+    width: 100%;
+
+    padding: 0 7rem;
+}
