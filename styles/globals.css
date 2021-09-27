@@ -8,9 +8,6 @@
 html,
 body {
     font-weight: 400;
-}
-
-body {
     line-height: 1;
     width: 100vw;
     height: 100vh;
@@ -33,7 +30,7 @@ textarea {
     font: inherit;
 }
 
-.main-container {
+.main_container {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -41,12 +38,23 @@ textarea {
 
 .container {
     width: 100%;
-    padding: 0 7rem;
-    position: relative;
+    padding: 0 6rem;
 }
 
-@media screen and (max-width: 1160px) {
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+@media screen and (max-width: 1024px) {
     .container {
         padding: 0 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
     }
 }

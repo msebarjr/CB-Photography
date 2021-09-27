@@ -10,7 +10,6 @@ function Profile() {
                 src={ProfileImage}
                 alt="Conrad Bleus Profile Photo"
                 layout="responsive"
-                objectFit="cover"
                 className={styles.photo}
             />
         </div>

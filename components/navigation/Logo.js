@@ -16,7 +16,7 @@ function Logo() {
                         width={48}
                         height={56}
                         priority
-                        layout="intrinsic"
+                        layout="fixed"
                     />
                 </a>
             </Link>

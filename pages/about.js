@@ -23,6 +23,7 @@ export default function About() {
                 alt="Boardwalk Ocean City, NY"
                 position="50% 55%"
             />
+
             <div className="container">
                 <h1 className={styles.title}>About Me</h1>
                 <div className={styles.info}>

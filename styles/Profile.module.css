@@ -1,32 +1,33 @@
 .profile {
     width: 400px;
     height: 400px;
-    margin-top: -100px;
-    /* margin-left: 100px; */
 }
 
 .photo {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 1275px) {
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+@media screen and (max-width: 1200px) {
     .profile {
-        width: 300px;
-        height: 300px;
-        margin-top: 4rem;
+        width: 350px;
+        height: 350px;
     }
 }
-
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1024px) {
     .profile {
         width: 250px;
         height: 250px;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
     .profile {
-        margin-top: 1rem;
         width: 175px;
         height: 175px;
     }
