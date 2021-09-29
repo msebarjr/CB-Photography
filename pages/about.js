@@ -1,12 +1,15 @@
 import Head from "next/head";
-import { FaAward, FaStar } from "react-icons/fa";
-import { IoCameraSharp } from "react-icons/io5";
-import { AiFillPicture } from "react-icons/ai";
+import Image from "next/image";
+import { FiAward } from "react-icons/fi";
+import {
+    IoStarOutline,
+    IoCameraOutline,
+    IoImageOutline,
+} from "react-icons/io5";
 
-import Hero from "../components/Hero";
 import Profile from "../components/Profile";
 import Recognition from "../components/Recognition";
-
+import Hero from "../components/Hero";
 import styles from "../styles/About.module.css";
 import aboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
 
@@ -17,12 +20,9 @@ export default function About() {
                 <title>CB Photography | About</title>
             </Head>
 
-            <Hero
-                title="About"
-                image={aboutHeroImage}
-                alt="Boardwalk Ocean City, NY"
-                position="50% 55%"
-            />
+            <section className={styles.hero}>
+                <Hero image={aboutHeroImage} alt="Ocean City, NJ Boardwalk" />
+            </section>
 
             <div className="container">
                 <h1 className={styles.title}>About Me</h1>
@@ -30,25 +30,54 @@ export default function About() {
                     <Profile />
                     <div className={styles.recognition}>
                         <Recognition
-                            icon={<FaAward />}
+                            icon={<FiAward />}
                             highlight="9+"
                             text="Years Of Experience"
                         />
                         <Recognition
-                            icon={<FaStar />}
+                            icon={<IoStarOutline />}
                             highlight="50+"
                             text="Satisfied Clients"
                         />
                         <Recognition
-                            icon={<IoCameraSharp />}
+                            icon={<IoCameraOutline />}
                             highlight="100's"
                             text="Of Photoshoots"
                         />
                         <Recognition
-                            icon={<AiFillPicture />}
+                            icon={<IoImageOutline />}
                             highlight="1000's"
                             text="Of Retouched Photos"
                         />
+                    </div>
+                </div>
+
+                <div className={styles.content}>
+                    <div className={styles.about_me}>
+                        <h1 className={styles.about_me_name}>Conrad Bleus</h1>
+                        <div className={styles.about_me_desc}>
+                            <p>
+                                Conrad Bleus is a South Florida published
+                                photographer based out of Coral Springs.
+                                Creativity has always been a driving force in
+                                Conrad’s life, and with the support from his
+                                wife and family he actively pursued photography.
+                                Conrad has shot everything from headshots to
+                                landscapes. He is always striving to get better
+                                in every aspect of photography.
+                            </p>
+                            <div className={styles.expecations}>
+                                <h3>What to expect</h3>
+                                <p>
+                                    A photoshoot with Conrad consists of a high
+                                    level of professionalism, comfortability,
+                                    and having fun with lots of laughter.
+                                    Conrad’s top priority is to make sure
+                                    everyone leaves happy and enjoys the
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

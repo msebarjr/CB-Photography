@@ -1,19 +1,20 @@
 import Image from "next/image";
 
-import styles from "../styles/Hero.module.css";
+// import styles from "../styles/Hero.module.css";
 
 function Hero(props) {
     return (
-        <Image
-            src={props.image}
-            alt={props.alt}
-            height={550}
-            priority
-            layout="responsive"
-            objectFit="cover"
-            objectPosition={props.position}
-            className={styles.hero}
-        />
+        <section style={{ zIndex: "-1" }}>
+            <Image
+                src={props.image}
+                alt={props.alt}
+                width={1600}
+                height={400}
+                priority
+                layout="responsive"
+                objectFit="cover"
+            />
+        </section>
     );
 }
 

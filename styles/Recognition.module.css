@@ -6,7 +6,7 @@
 }
 
 .icon {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     background-color: rgba(244, 244, 244, 1);
     padding: 1.25rem;
     border-radius: 50%;
@@ -61,6 +61,46 @@
 
 @media screen and (max-width: 768px) {
     .wrapper {
-        padding: 1.25rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 0.65rem;
+        width: 14ch;
+    }
+
+    .info span {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        background-color: rgba(244, 244, 244, 1);
+        border-radius: 5px;
+        padding: 0.5rem 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .icon {
+        padding: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .info {
+        margin: 0;
+        width: 80%;
+        margin-left: 1rem;
+        justify-self: center;
+        width: fit-content;
     }
 }

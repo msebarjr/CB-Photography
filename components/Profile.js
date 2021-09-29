@@ -9,6 +9,8 @@ function Profile() {
             <Image
                 src={ProfileImage}
                 alt="Conrad Bleus Profile Photo"
+                width={300}
+                height={300}
                 layout="responsive"
                 className={styles.photo}
             />

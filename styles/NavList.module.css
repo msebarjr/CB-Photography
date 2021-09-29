@@ -12,12 +12,11 @@
 .nav_link {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .nav_link:hover {
     background-color: rgb(180, 177, 177);
-    /* border-radius: 4px; */
     transition: all 0.2s ease-out;
 }
 

@@ -19,10 +19,10 @@
 
 .recognition {
     align-self: flex-end;
-    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* 320px — 480px for mobile devices,
@@ -47,25 +47,42 @@
         display: none;
     }
 
-    .info {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .recognition {
         align-self: center;
-        margin-top: 1rem;
+        margin-top: 7rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .info {
-        margin-top: -2rem;
+        margin-top: 3rem;
+        flex-direction: column;
     }
 
     .recognition {
-        flex-wrap: wrap;
-        margin-top: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero,
+    .recognition {
+        display: none;
+    }
+
+    .title {
+        display: block;
+        color: rgba(0, 0, 0, 1);
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        background-color: rgba(244, 244, 244, 1);
+        padding: 3rem;
+    }
+
+    .info {
+        margin: 1.25rem;
     }
 }
