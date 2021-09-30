@@ -1,18 +1,16 @@
 import Image from "next/image";
 
 import styles from "../styles/Profile.module.css";
-import ProfileImage from "../public/images/conrad.jpg";
 
-function Profile() {
+function Profile(props) {
     return (
-        <div className={styles.profile}>
+        <div className={props.reverse ? styles.stock : styles.profile}>
             <Image
-                src={ProfileImage}
-                alt="Conrad Bleus Profile Photo"
+                src={props.image}
+                alt={props.alt}
                 width={300}
-                height={300}
+                height={ 300}
                 layout="responsive"
-                className={styles.photo}
             />
         </div>
     );

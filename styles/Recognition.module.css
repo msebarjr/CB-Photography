@@ -53,6 +53,10 @@
         padding: 0.9rem;
     }
 
+    .info {
+      font-size: .6rem;
+    }
+
     .info span {
         font-weight: 700;
         font-size: 1.125rem;

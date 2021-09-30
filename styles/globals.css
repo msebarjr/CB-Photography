@@ -11,6 +11,7 @@ body {
     line-height: 1;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 ul {
@@ -73,6 +74,6 @@ textarea {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 }

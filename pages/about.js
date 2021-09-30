@@ -11,7 +11,9 @@ import Profile from "../components/Profile";
 import Recognition from "../components/Recognition";
 import Hero from "../components/Hero";
 import styles from "../styles/About.module.css";
-import aboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
+import AboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
+import ProfileImage from "../public/images/conrad.jpg";
+import CameraImage from "../public/images/camera.jpg";
 
 export default function About() {
     return (
@@ -21,13 +23,16 @@ export default function About() {
             </Head>
 
             <section className={styles.hero}>
-                <Hero image={aboutHeroImage} alt="Ocean City, NJ Boardwalk" />
+                <Hero image={AboutHeroImage} alt="Ocean City, NJ Boardwalk" />
             </section>
 
             <div className="container">
                 <h1 className={styles.title}>About Me</h1>
                 <div className={styles.info}>
-                    <Profile />
+                    <Profile
+                        image={ProfileImage}
+                        alt="Conrad Bleus Profile Photo"
+                    />
                     <div className={styles.recognition}>
                         <Recognition
                             icon={<FiAward />}
@@ -66,7 +71,7 @@ export default function About() {
                                 landscapes. He is always striving to get better
                                 in every aspect of photography.
                             </p>
-                            <div className={styles.expecations}>
+                            <div className={styles.expectations}>
                                 <h3>What to expect</h3>
                                 <p>
                                     A photoshoot with Conrad consists of a high
@@ -79,6 +84,11 @@ export default function About() {
                             </div>
                         </div>
                     </div>
+                    <Profile
+                        image={CameraImage}
+                        alt="Stock photo of camera and photos"
+                        reverse
+                    />
                 </div>
             </div>
         </>

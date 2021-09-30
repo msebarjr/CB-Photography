@@ -23,6 +23,44 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-right: -2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.about_me {
+    width: 50%;
+    align-self: start;
+    margin-left: -2rem;
+}
+
+.about_me_name {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(180, 177, 177);
+}
+
+.about_me_desc {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.expectations {
+    margin-top: 2rem;
+}
+
+.expectations h3 {
+    font-size: 1.5rem;
+}
+
+.expectations p {
+    margin-top: 0.5rem;
+    line-height: 1.5;
 }
 
 /* 320px — 480px for mobile devices,
@@ -40,6 +78,14 @@
     .info {
         margin-top: -4rem;
     }
+
+    .recognition {
+        margin-right: -2rem;
+    }
+
+    .content {
+        margin-top: 4rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -50,6 +96,27 @@
     .recognition {
         align-self: center;
         margin-top: 7rem;
+        margin-right: 1rem;
+    }
+
+    .about_me {
+        margin-left: -1rem;
+    }
+
+    .about_me_name {
+        font-size: 2rem;
+    }
+
+    .about_me_desc {
+        font-size: 0.8rem;
+    }
+
+    .expectations h3 {
+        font-size: 1.25rem;
+    }
+
+    .expectations p {
+        font-size: 0.8rem;
     }
 }
 
@@ -61,6 +128,21 @@
 
     .recognition {
         margin-top: 2rem;
+    }
+
+    .content {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .about_me {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 2.5rem;
+    }
+
+    .about_me_name, .expectations h3 {
+        text-align: center;
     }
 }
 

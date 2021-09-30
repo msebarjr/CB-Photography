@@ -5,7 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 2.5rem;
+    padding: 0.5rem 2.5rem;
+    -webkit-box-shadow: 5px 5px 15px -1px #666666;
+    box-shadow: 0px 5px 5px -8px #666666;
     z-index: 999;
 }
 

@@ -1,4 +1,5 @@
-.profile {
+.profile,
+.stock {
     width: 300px;
     height: 300px;
     position: relative;
@@ -18,6 +19,19 @@
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
 }
 
+.stock::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -10%;
+    right: -10%;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
 /* 320px — 480px for mobile devices,
    481px — 768px for iPads & tablets,
    769px — 1024px for small screens like laptop,
@@ -26,16 +40,28 @@
 */
 @media screen and (max-width: 1200px) {
     .profile,
-    .profile::before {
+    .profile::before,
+    .stock,
+    .stock::before {
         width: 275px;
         height: 275px;
+    }
+
+    .stock {
+        margin-top: 4rem;
     }
 }
 @media screen and (max-width: 1024px) {
     .profile,
-    .profile::before {
+    .profile::before,
+    .stock,
+    .stock::before {
         width: 200px;
         height: 200px;
+    }
+
+    .stock {
+        margin-right: 3rem;
     }
 }
 
@@ -44,6 +70,11 @@
     .profile::before {
         width: 150px;
         height: 150px;
+    }
+
+    .stock,
+    .stock::before {
+        display: none;
     }
 }
 
