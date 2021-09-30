@@ -1,0 +1,11 @@
+.footer_info_title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.info_wrapper p{
+  line-height: 1.75;
+}

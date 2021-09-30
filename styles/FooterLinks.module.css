@@ -1,0 +1,33 @@
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_links_title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 1.5rem;
+}
+
+.links_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.left_links {
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    padding-right: 1rem;
+}
+
+.right_links {
+    padding-left: 1rem;
+}
+
+.footer_item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { FiAward } from "react-icons/fi";
 import {
     IoStarOutline,
@@ -14,6 +13,7 @@ import styles from "../styles/About.module.css";
 import AboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
 import ProfileImage from "../public/images/conrad.jpg";
 import CameraImage from "../public/images/camera.jpg";
+import Footer from "../components/footer/Footer";
 
 export default function About() {
     return (
@@ -91,6 +91,8 @@ export default function About() {
                     />
                 </div>
             </div>
+
+            <Footer />
         </>
     );
 }
