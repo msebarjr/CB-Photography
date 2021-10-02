@@ -1,0 +1,16 @@
+.contact_details {
+  margin-top: 1.5rem;
+}
+
+.icon_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}

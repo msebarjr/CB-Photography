@@ -29,14 +29,14 @@ function NavList(props) {
         >
             {/* Each nav link onClick() will close mobile menu when clicked */}
             <li className={styles.nav_item}>
-                <Link href="/">
+                <Link href="/" scroll={true}>
                     <a className={styles.nav_link} onClick={closeMenu}>
                         Home
                     </a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link href="/about">
+                <Link href="/about" scroll={true}>
                     <a className={styles.nav_link} onClick={closeMenu}>
                         About
                     </a>
@@ -47,7 +47,7 @@ function NavList(props) {
                 onMouseEnter={onMouseEnterHandler}
                 onMouseLeave={onMouseLeaveHandler}
             >
-                <Link href="/portfolio">
+                <Link href="/portfolio" scroll={true}>
                     <a className={styles.nav_link} onClick={closeMenu}>
                         Portfolio
                         <FaCaretDown className={styles.caret_down} />
@@ -56,7 +56,7 @@ function NavList(props) {
                 {props.dropdown && <Dropdown />}
             </li>
             <li className={styles.nav_item}>
-                <Link href="/testimonials">
+                <Link href="/testimonials" scroll={true}>
                     <a className={styles.nav_link} onClick={closeMenu}>
                         Testimonials
                     </a>
@@ -64,7 +64,7 @@ function NavList(props) {
             </li>
             <li className={styles.nav_item}>
                 <Button>
-                    <Link href="/contact">
+                    <Link href="/contact" scroll={true}>
                         <a className={styles.contact} onClick={closeMenu}>
                             Contact
                         </a>

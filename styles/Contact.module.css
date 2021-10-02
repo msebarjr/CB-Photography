@@ -1,0 +1,10 @@
+.contact_container {
+    margin-top: 5rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-shadow: -1px 6px 19px -4px rgba(181, 179, 181, 1);
+    -moz-box-shadow: -1px 6px 19px -4px rgba(181, 179, 181, 1);
+    box-shadow: -1px 6px 19px -4px rgba(181, 179, 181, 1);
+}

@@ -1,0 +1,72 @@
+.form {
+    padding: 2.5rem;
+    flex: 0 1 60%;
+}
+
+.form h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin: 0.5rem 0 2rem;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 1 100%;
+    margin-bottom: 2.5rem;
+    padding-left: 0;
+}
+
+.form_group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form_group:nth-child(2) {
+    padding-left: 2.5rem;
+}
+
+.form_group input,
+.form_group textarea {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    padding: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+}
+
+.form_group input:focus {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.form_group small {
+    text-align: end;
+}
+
+.form_group textarea {
+    resize: none;
+}
+
+.button {
+    width: 30%;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    transform: scale(1.125);
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    margin-left: 0.8rem;
+    border: 2px solid rgb(180, 177, 177);
+}

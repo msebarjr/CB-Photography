@@ -13,6 +13,7 @@ function Hero(props) {
                 priority
                 layout="responsive"
                 objectFit="cover"
+                objectPosition={props.position ? props.position : null}
             />
         </section>
     );

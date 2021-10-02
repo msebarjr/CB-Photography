@@ -1,0 +1,26 @@
+.contact_info {
+    background-color: rgba(229, 229, 229, 1);
+    flex: 0 1 40%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 10rem; */
+}
+
+.contact_info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact_info_text {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0.5rem 0 2rem;
+    line-height: 1.45;
+    font-size: 0.9rem;
+}
+
+.question {
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+}
