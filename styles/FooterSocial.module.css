@@ -15,3 +15,34 @@
 .social_icon {
     margin-right: 0.25rem;
 }
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1024px) {
+    .social_title,
+    .social {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social_title,
+    .social {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .social_title {
+        margin: 2rem 0 1rem;
+    }
+
+    .social_title,
+    .social {
+        font-size: 0.7rem;
+    }
+}

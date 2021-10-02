@@ -6,6 +6,11 @@
     z-index: 10;
 }
 
+.stock {
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
 .profile::before {
     content: "";
     display: block;
