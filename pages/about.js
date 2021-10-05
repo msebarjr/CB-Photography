@@ -13,7 +13,6 @@ import styles from "../styles/About.module.css";
 import AboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
 import ProfileImage from "../public/images/conrad.jpg";
 import CameraImage from "../public/images/camera.jpg";
-import Footer from "../components/footer/Footer";
 
 export default function About() {
     return (
@@ -22,9 +21,7 @@ export default function About() {
                 <title>CB Photography | About</title>
             </Head>
 
-            <section className={styles.hero}>
-                <Hero image={AboutHeroImage} alt="Ocean City, NJ Boardwalk" />
-            </section>
+            <Hero image={AboutHeroImage} alt="Ocean City, NJ Boardwalk" />
 
             <div className="container">
                 <h1 className={styles.title}>About Me</h1>
@@ -91,8 +88,6 @@ export default function About() {
                     />
                 </div>
             </div>
-
-            <Footer />
         </>
     );
 }

@@ -1,0 +1,42 @@
+.contact_container {
+    margin-top: 5rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-shadow: -1px 6px 19px -4px rgba(181, 179, 181, 1);
+    -moz-box-shadow: -1px 6px 19px -4px rgba(181, 179, 181, 1);
+    box-shadow: -1px 6px 19px -4px rgba(181, 179, 181, 1);
+}
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1024px) {
+    .contact_container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact_container {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact_container {
+        width: 100%;
+        margin: 1rem auto;
+        margin-bottom: -2rem;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        padding: 0;
+    }
+}
