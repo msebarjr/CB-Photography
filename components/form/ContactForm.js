@@ -15,11 +15,15 @@ function ContactForm() {
             <h4>Send me a message</h4>
             <div className={styles.col}>
                 <div className={styles.form_group}>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">
+                        <span>*</span>Name
+                    </label>
                     <input type="text" name="name" id="name" required />
                 </div>
                 <div className={styles.form_group}>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">
+                        <span>*</span>Email
+                    </label>
                     <input type="email" name="email" id="email" required />
                 </div>
             </div>
@@ -29,7 +33,9 @@ function ContactForm() {
                     <input type="text" name="subject" id="subject" />
                 </div>
                 <div className={styles.form_group}>
-                    <label htmlFor="phone">Phone Number</label>
+                    <label htmlFor="phone">
+                        <span>*</span>Phone Number
+                    </label>
                     <input
                         type="tel"
                         placeholder="123-456-7890"
@@ -43,7 +49,9 @@ function ContactForm() {
             </div>
             <div className={styles.col}>
                 <div className={styles.form_group}>
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">
+                        <span>*</span>Message
+                    </label>
                     <textarea
                         name=""
                         id=""
@@ -58,6 +66,9 @@ function ContactForm() {
             {/* <input type="hidden" name="_subject" value="New Client Inquiry!" />
             <input type="text" name="_honey" style="display:none" />
             <input type="hidden" name="_template" value="box" /> */}
+            <small className={styles.small}>
+                <span>*</span> required fields
+            </small>
             <button className={styles.button}>Send Message</button>
         </form>
     );

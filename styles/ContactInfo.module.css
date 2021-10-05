@@ -24,3 +24,43 @@
     font-size: 1rem;
     display: block;
 }
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1024px) {
+    .contact_info {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    .contact_info h4,
+    .question {
+        line-height: 1.25;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact_info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .contact_info h4 {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .contact_info {
+      padding: 1.5rem;
+      text-align: center;
+  }
+
+
+}
