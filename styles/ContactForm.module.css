@@ -48,10 +48,6 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 }
 
-.form_group small {
-    text-align: end;
-}
-
 .form_group textarea {
     resize: none;
     line-height: 1;
@@ -71,8 +67,8 @@
 }
 
 .small {
-    text-align: right;
     display: block;
+    margin-top: 0.5rem;
 }
 
 .button {
@@ -89,6 +85,14 @@
     background-color: transparent;
     margin-left: 0.8rem;
     border: 2px solid rgb(180, 177, 177);
+}
+
+.error {
+    color: red;
+    font-size: 0.75rem;
+    font-family: serif;
+    margin-top: 0.5rem;
+    text-align: right;
 }
 
 /* 320px — 480px for mobile devices,

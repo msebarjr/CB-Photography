@@ -1,3 +1,4 @@
+import React, { useReducer } from "react";
 import Head from "next/head";
 
 import ContactForm from "../components/form/ContactForm";
@@ -7,7 +8,8 @@ import ContactHeroImage from "../public/images/landscapes/group-on-bench-looking
 
 import styles from "../styles/Contact.module.css";
 
-function Contact() {
+function Contact() {    
+    
     return (
         <>
             <Head>
