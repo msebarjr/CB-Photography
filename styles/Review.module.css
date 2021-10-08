@@ -1,0 +1,20 @@
+.review {
+    width: 80%;
+}
+
+.review_text {
+    line-height: 1.25;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    margin-bottom: 3rem;
+}
+
+.client {
+    /* margin: 1rem 0; */
+    text-align: right;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+}

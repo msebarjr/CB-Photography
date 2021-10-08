@@ -88,10 +88,11 @@
 }
 
 .error {
-    color: red;
+    color: rgb(228, 23, 23);
     font-size: 0.75rem;
     font-family: serif;
     margin-top: 0.5rem;
+    letter-spacing: 1px;
     text-align: right;
 }
 

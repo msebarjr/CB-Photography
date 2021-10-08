@@ -71,8 +71,6 @@ function ContactForm() {
                         name="name"
                         id="name"
                         ref={nameInputRef}
-                        // value={formState.name}
-                        // onChange={handleChange}
                     />
                     {!formInputValidity.name && (
                         <p className={styles.error}>Please provide your name</p>
@@ -83,12 +81,10 @@ function ContactForm() {
                         <span>*</span>Email
                     </label>
                     <input
-                        type="email"
+                        type="text"
                         name="email"
                         id="email"
                         ref={emailInputRef}
-                        // value={formState.email}
-                        // onChange={handleChange}
                     />
                     {!formInputValidity.email && (
                         <p className={styles.error}>
@@ -100,13 +96,7 @@ function ContactForm() {
             <div className={styles.col}>
                 <div className={styles.form_group}>
                     <label htmlFor="subject">Subject</label>
-                    <input
-                        type="text"
-                        name="subject"
-                        id="subject"
-                        // value={formState.subject}
-                        // onChange={handleChange}
-                    />
+                    <input type="text" name="subject" id="subject" />
                 </div>
                 <div className={styles.form_group}>
                     <label htmlFor="phone">
@@ -114,18 +104,14 @@ function ContactForm() {
                     </label>
                     <input
                         type="tel"
-                        placeholder="1234567890"
-                        // pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                         name="phone"
                         id="phone"
                         ref={phoneInputRef}
-                        // value={formState.phone}
-                        // onChange={handleChange}
                     />
 
                     {!formInputValidity.phone && (
                         <p className={styles.error}>
-                            Please provide valid phone number format
+                            Please provide valid phone number
                         </p>
                     )}
                 </div>
@@ -143,8 +129,6 @@ function ContactForm() {
                         name="message"
                         id="message"
                         ref={messageInputRef}
-                        // value={formState.message}
-                        // onChange={handleChange}
                     ></textarea>
                 </div>
             </div>
