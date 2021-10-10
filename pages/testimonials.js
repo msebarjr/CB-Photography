@@ -10,10 +10,10 @@ import styles from "../styles/Testimonials.module.css";
 
 export default function Testimonials() {
     const breakPoints = [
-        { width: 1, itemsToShow: 1, showArrows: false },
-        { width: 550, itemsToShow: 2, showArrows: false },
-        { width: 768, itemsToShow: 3, showArrows: false },
-        { width: 1200, itemsToShow: 4, showArrows: false },
+        { width: 1, itemsToShow: 1 },
+        { width: 550, itemsToShow: 2 },
+        { width: 768, itemsToShow: 3 },
+        { width: 1200, itemsToShow: 4 },
     ];
 
     return (
@@ -27,6 +27,20 @@ export default function Testimonials() {
                 alt="Boat at the beach in Ocean City, NJ"
                 position="center bottom"
             />
+            <div className={styles.testimonial_mobile}>
+                {testimonialData.map((testimonial, index) => {
+                    return (
+                        <Testimonial
+                            key={index}
+                            image={testimonial.image}
+                            text={testimonial.text}
+                            alt={testimonial.alt}
+                            client={testimonial.client}
+                            position={testimonial.position}
+                        />
+                    );
+                })}
+            </div>
 
             <div className={styles.testimonial_wrapper}>
                 <Carousel

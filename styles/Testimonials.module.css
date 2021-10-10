@@ -1,9 +1,14 @@
+.testimonial_mobile {
+    display: none;
+}
+
 .testimonial_wrapper {
     width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-bottom: -2rem;
 }
 
@@ -25,12 +30,18 @@
 @media screen and (max-width: 768px) {
     .testimonial_wrapper {
         margin-bottom: 3rem;
-        margin-top: -2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .testimonial_wrapper,
     .slide {
-        margin: 0 auto;
+        display: none;
+    }
+
+    .testimonial_mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }

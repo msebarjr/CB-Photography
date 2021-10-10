@@ -3,12 +3,13 @@
 }
 
 .review_text {
-    line-height: 1.25;
+    line-height: 1.5;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 12;
     -webkit-box-orient: vertical;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .client {
