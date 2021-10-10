@@ -43,7 +43,15 @@ textarea {
 
 .container {
     width: 100%;
-    padding: 0 10em;
+    padding: 0 10rem;
+}
+
+.rec.rec-arrow {
+    color: goldenrod;
+}
+
+.rec.rec-dot_active {
+    background: goldenrod;
 }
 
 /* 320px — 480px for mobile devices,
