@@ -57,7 +57,7 @@ function ContactForm() {
         <form
             onSubmit={submitHandler}
             className={styles.form}
-            action="https://formsubmit.co/msebarjr@gmail.com"
+            action="https://formsubmit.co/c2d051d8c6ffce0c03af37eda49392e5"
             method="POST"
         >
             <h4>Send me a message</h4>
@@ -132,9 +132,11 @@ function ContactForm() {
                     ></textarea>
                 </div>
             </div>
-            {/* <input type="hidden" name="_subject" value="New Client Inquiry!" />
-            <input type="text" name="_honey" style="display:none" />
-            <input type="hidden" name="_template" value="box" /> */}
+
+            <input type="hidden" name="_subject" value="New Client Inquiry!" />
+            <input type="text" name="_honey" style={{ display: "none" }} />
+            <input type="hidden" name="_template" value="box" />
+
             {!formInputValidity.message && (
                 <p className={styles.error}>Please provide a message</p>
             )}
