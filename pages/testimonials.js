@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Carousel from "react-elastic-carousel";
 
+import Navbar from "../components/navigation/Navbar";
+import Footer from "../components/footer/Footer";
 import Hero from "../components/Hero";
 import { testimonialData } from "../data/testimonials/testimonialData";
 import TestimonialHeroImage from "../public/images/landscapes/boat-on-beach-ocean-city-nj.jpg";
@@ -17,11 +19,11 @@ export default function Testimonials() {
     ];
 
     return (
-        <div>
+        <>
             <Head>
                 <title>CB Photography | Testimonials</title>
             </Head>
-
+            <Navbar />
             <Hero
                 image={TestimonialHeroImage}
                 alt="Boat at the beach in Ocean City, NJ"
@@ -63,6 +65,7 @@ export default function Testimonials() {
                     })}
                 </Carousel>
             </div>
-        </div>
+            <Footer />
+        </>
     );
 }

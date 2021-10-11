@@ -1,0 +1,54 @@
+.thankyou {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankyou_wrapper {
+    padding: 4rem 2rem;
+    width: 40%;
+    height: 70%;
+    /* background-color: rgba(255, 255, 225, 1); */
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    filter: brightness(100%);
+}
+
+.heading h3 {
+}
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 768px) {
+    .thankyou {
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .thankyou {
+    }
+}

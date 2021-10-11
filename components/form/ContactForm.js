@@ -133,9 +133,10 @@ function ContactForm() {
                 </div>
             </div>
 
-            <input type="hidden" name="_subject" value="New Client Inquiry!" />
             <input type="text" name="_honey" style={{ display: "none" }} />
-            <input type="hidden" name="_template" value="box" />
+            <input type="hidden" name="_subject" value="New Client Inquiry!" />
+            <input type="hidden" name="_next" value="http://localhost:3000/" />
+            <input type="hidden" name="_template" value="" />
 
             {!formInputValidity.message && (
                 <p className={styles.error}>Please provide a message</p>
