@@ -1,16 +1,64 @@
+import React, { useState, useReducer, useRef } from "react";
+
 import styles from "../../styles/ContactForm.module.css";
 
+const emailChecker = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+const isEmpty = (value) => value.trim() === "";
+const isValidPhone = (value) =>
+    value.match(/^\(?([0-9]{3})\)?[- ]?([0-9]{3})[-. ]?([0-9]{4})$/) != null;
+const isValidEmail = (value) =>
+    value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+
 function ContactForm() {
+    const [formInputValidity, setFormInputValidity] = useState({
+        name: true,
+        email: true,
+        phone: true,
+        message: true,
+    });
+
+    const nameInputRef = useRef();
+    const emailInputRef = useRef();
+    const phoneInputRef = useRef();
+    const messageInputRef = useRef();
+
     const submitHandler = (e) => {
-        e.preventDefault();
-        console.log("This works");
+        const enteredName = nameInputRef.current.value;
+        const enteredEmail = emailInputRef.current.value;
+        const enteredPhone = phoneInputRef.current.value;
+        const enteredMessage = messageInputRef.current.value;
+
+        const enteredNameIsValid = !isEmpty(enteredName);
+        const enteredEmailIsValid =
+            !isEmpty(enteredEmail) && isValidEmail(enteredEmail);
+        const enteredPhoneIsValid = isValidPhone(enteredPhone);
+        const enteredMessageIsValid = !isEmpty(enteredMessage);
+
+        setFormInputValidity({
+            name: enteredNameIsValid,
+            email: enteredEmailIsValid,
+            phone: enteredPhoneIsValid,
+            message: enteredMessageIsValid,
+        });
+
+        const formIsValid =
+            enteredNameIsValid &&
+            enteredEmailIsValid &&
+            enteredPhoneIsValid &&
+            enteredMessageIsValid;
+
+        if (!formIsValid) {
+            e.preventDefault();
+        }
     };
+
     return (
         <form
             onSubmit={submitHandler}
             className={styles.form}
-            // action="https://formsubmit.co/msebarjr@gmail.com"
-            // method="POST"
+            action="https://formsubmit.co/msebarjr@gmail.com"
+            method="POST"
         >
             <h4>Send me a message</h4>
             <div className={styles.col}>
@@ -18,13 +66,31 @@ function ContactForm() {
                     <label htmlFor="name">
                         <span>*</span>Name
                     </label>
-                    <input type="text" name="name" id="name" required />
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        ref={nameInputRef}
+                    />
+                    {!formInputValidity.name && (
+                        <p className={styles.error}>Please provide your name</p>
+                    )}
                 </div>
                 <div className={styles.form_group}>
                     <label htmlFor="email">
                         <span>*</span>Email
                     </label>
-                    <input type="email" name="email" id="email" required />
+                    <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        ref={emailInputRef}
+                    />
+                    {!formInputValidity.email && (
+                        <p className={styles.error}>
+                            Please provide valid email
+                        </p>
+                    )}
                 </div>
             </div>
             <div className={styles.col}>
@@ -38,13 +104,16 @@ function ContactForm() {
                     </label>
                     <input
                         type="tel"
-                        placeholder="123-456-7890"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required
                         name="phone"
                         id="phone"
+                        ref={phoneInputRef}
                     />
-                    <small>Format 123-456-7890</small>
+
+                    {!formInputValidity.phone && (
+                        <p className={styles.error}>
+                            Please provide valid phone number
+                        </p>
+                    )}
                 </div>
             </div>
             <div className={styles.col}>
@@ -57,19 +126,23 @@ function ContactForm() {
                         id=""
                         cols="30"
                         rows="10"
-                        required
                         name="message"
                         id="message"
+                        ref={messageInputRef}
                     ></textarea>
                 </div>
             </div>
             {/* <input type="hidden" name="_subject" value="New Client Inquiry!" />
             <input type="text" name="_honey" style="display:none" />
             <input type="hidden" name="_template" value="box" /> */}
+            {!formInputValidity.message && (
+                <p className={styles.error}>Please provide a message</p>
+            )}
+
+            <button className={styles.button}>Send Message</button>
             <small className={styles.small}>
                 <span>*</span> required fields
             </small>
-            <button className={styles.button}>Send Message</button>
         </form>
     );
 }

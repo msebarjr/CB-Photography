@@ -1,0 +1,32 @@
+.testimonial {
+    width: 300px;
+    height: 475px;
+    background-color: rgba(229, 229, 229, 1);
+    margin-top: 8rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rating {
+    color: rgba(180, 144, 12, 1);
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 480px) {
+    .testimonial {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

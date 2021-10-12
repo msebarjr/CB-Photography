@@ -1,0 +1,47 @@
+.testimonial_mobile {
+    display: none;
+}
+
+.testimonial_wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: -2rem;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 2rem;
+}
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 768px) {
+    .testimonial_wrapper {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonial_wrapper,
+    .slide {
+        display: none;
+    }
+
+    .testimonial_mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+.image_container {
+    width: 175px;
+    height: 175px;
+    margin-top: -5rem;
+}
+
+.image {
+    border-radius: 50%;
+}
