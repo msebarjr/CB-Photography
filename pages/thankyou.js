@@ -2,7 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import ThankyouImage from "../public/images/thankyou1.jpg";
+import { IoCameraOutline } from "react-icons/io5";
+import ThankyouImage from "../public/images/landscapes/north-carolina-mountains.jpg";
 import styles from "../styles/Thankyou.module.css";
 
 function Thankyou() {
@@ -26,10 +27,13 @@ function Thankyou() {
                             <h3>for choosing CB Photography</h3>
                         </div>
                         <div className={styles.motto}>
-                            <p>
-                                I await the opportunity to <span>capture</span>
-                                your unforgettable moments!
-                            </p>
+                            <p>I await the opportunity to</p>
+                            <div className={styles.capture}>
+                                <IoCameraOutline />
+                                <span>capture</span>
+                                <IoCameraOutline />
+                            </div>
+                            <p>your unforgettable moments!</p>
                         </div>
                         <div className={styles.message}>
                             <p>
@@ -38,6 +42,11 @@ function Thankyou() {
                                 respond to your email as quickly as possible.
                             </p>
                         </div>
+                        <Link href="/" scroll={true}>
+                            <a>
+                                <button className={styles.btn}>Home</button>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

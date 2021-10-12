@@ -63,13 +63,11 @@ function NavList(props) {
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Button>
-                    <Link href="/contact" scroll={true}>
-                        <a className={styles.contact} onClick={closeMenu}>
-                            Contact
-                        </a>
-                    </Link>
-                </Button>
+                <Link href="/contact" scroll={true}>
+                    <a className={styles.contact} onClick={closeMenu}>
+                        <Button>Contact </Button>
+                    </a>
+                </Link>
             </li>
         </ul>
     );
