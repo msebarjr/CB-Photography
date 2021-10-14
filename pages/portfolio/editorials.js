@@ -1,5 +1,10 @@
 import Head from "next/head";
 
+import Navbar from "../../components/navigation/Navbar";
+import Footer from "../../components/footer/Footer";
+import Gallery from "../../components/Gallery";
+import { editoriallData } from "../../data/editorialData";
+
 export default function Editorials() {
     return (
         <div>
@@ -7,7 +12,11 @@ export default function Editorials() {
                 <title>CB Photography | Editorials</title>
             </Head>
 
-            <h1>Editorials Page</h1>
+            <Navbar />           
+
+            <Gallery title="Editorials" data={editoriallData} />
+
+            <Footer />
         </div>
     );
 }

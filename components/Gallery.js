@@ -2,10 +2,9 @@ import { useState } from "react";
 import Image from "next/image";
 
 import { IoCloseOutline } from "react-icons/io5";
-import { testimonialData } from "../data/testimonials/testimonialData";
 import styles from "../styles/Gallery.module.css";
 
-function Gallery() {
+function Gallery(props) {
     const [modal, setModal] = useState(false);
     const [tempImgSrc, setTempImgSrc] = useState("");
 
@@ -30,10 +29,10 @@ function Gallery() {
                             src={tempImgSrc}
                             alt="Hello"
                             width={900}
-                            height={600}
+                            height={900}
                             objectFit="cover"
                             // objectPosition={img.position ? item.position : ""}
-                            // layout="resp"
+                            // layout="responsive"
                         />
 
                         <IoCloseOutline onClick={() => setModal(false)} />
@@ -41,8 +40,10 @@ function Gallery() {
                 </>
             )}
 
+            <h1 className={styles.title}>{props.title}</h1>
+
             <div className={styles.gallery}>
-                {testimonialData.map((item, index) => {
+                {props.data.map((item, index) => {
                     return (
                         <div
                             className={styles.pics}
@@ -52,13 +53,10 @@ function Gallery() {
                             <Image
                                 src={item.image}
                                 alt={item.alt}
-                                width={900}
-                                height={600}
+                                width={item.width}
+                                height={item.height}
                                 objectFit="cover"
-                                objectPosition={
-                                    item.position ? item.position : ""
-                                }
-                                // layout="fill"
+                                objectPosition={item.position}
                             />
                         </div>
                     );

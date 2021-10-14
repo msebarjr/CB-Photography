@@ -4,7 +4,7 @@ import Carousel from "react-elastic-carousel";
 import Navbar from "../components/navigation/Navbar";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/Hero";
-import { testimonialData } from "../data/testimonials/testimonialData";
+import { testimonialData } from "../data/testimonialData";
 import TestimonialHeroImage from "../public/images/landscapes/boat-on-beach-ocean-city-nj.jpg";
 import Testimonial from "../components/Testimonial";
 

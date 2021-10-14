@@ -46,6 +46,12 @@
     cursor: pointer;
 }
 
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
 .gallery {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -54,7 +60,7 @@
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 0 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .gallery .pics {
@@ -84,5 +90,9 @@
         -webkit-column-width: 100%;
         -moz-column-width: 100%;
         column-width: 100%;
+    }
+
+    .gallery .pics {
+        pointer-events: none;
     }
 }
