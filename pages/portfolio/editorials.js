@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navbar from "../../components/navigation/Navbar";
 import Footer from "../../components/footer/Footer";
 import Gallery from "../../components/Gallery";
-import { editoriallData } from "../../data/editorialData";
+import { editorialData } from "../../data/editorialData";
 
 export default function Editorials() {
     return (
@@ -12,9 +12,9 @@ export default function Editorials() {
                 <title>CB Photography | Editorials</title>
             </Head>
 
-            <Navbar />           
+            <Navbar />
 
-            <Gallery title="Editorials" data={editoriallData} />
+            <Gallery title="Editorials" data={editorialData} />
 
             <Footer />
         </div>

@@ -20,7 +20,6 @@
 .thankyou_wrapper {
     width: 50%;
     max-width: 750px;
-    height: 80%;
     background-color: rgba(6, 6, 6, 0.7);
     color: rgba(255, 255, 255, 1);
     text-align: center;
@@ -28,6 +27,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 4rem 0 2rem;
+}
+
+.heading {
+    margin-top: 2rem;
 }
 
 .heading h1 {
@@ -43,6 +47,7 @@
 
 .motto {
     line-height: 1.5;
+    margin: 4rem 0;
 }
 
 .motto p {
@@ -63,6 +68,10 @@
     margin: 1rem;
 }
 
+.message {
+    margin-bottom: 4rem;
+}
+
 .message p {
     line-height: 1.75;
     font-size: 1.25rem;
@@ -72,7 +81,7 @@
 .btn {
     cursor: pointer;
     text-transform: uppercase;
-
+    margin-bottom: 2rem;
     padding: 1rem 7rem;
     font-size: 1.5rem;
     background: transparent;
@@ -113,11 +122,11 @@
     }
 
     .motto p {
-        font-size: 1.125rem;
+        font-size: 0.95rem;
     }
 
     .message p {
-        font-size: 1rem;
+        font-size: 0.75rem;
         margin: 0 2rem;
     }
 }
@@ -136,8 +145,12 @@
     }
 
     .heading h3 {
-        font-size: 1.5rem;
-        line-height: 1.5;
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    .motto {
+        margin: 2rem 0;
     }
 
     .motto p {
@@ -146,15 +159,17 @@
 
     .capture {
         font-size: 1rem;
+        margin: 0.75rem 0;
     }
 
     .capture span {
-        margin: 0;
+        margin: 0 0.75rem;
     }
 
     .message p {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
+
     .btn {
         padding: 1rem 5rem;
     }

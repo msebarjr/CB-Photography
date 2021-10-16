@@ -9,7 +9,7 @@ function Profile(props) {
                 src={props.image}
                 alt={props.alt}
                 width={300}
-                height={ 300}
+                height={300}
                 layout="responsive"
             />
         </div>

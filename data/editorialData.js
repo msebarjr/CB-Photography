@@ -1,4 +1,4 @@
-export const editoriallData = [
+export const editorialData = [
     {
         image: "/../public/images/editorials/ariana.jpg",
         alt: "Woman posing by railing",

@@ -1,5 +1,10 @@
 import Head from "next/head";
 
+import Navbar from "../../components/navigation/Navbar";
+import Footer from "../../components/footer/Footer";
+import Gallery from "../../components/Gallery";
+import { sportData } from "../../data/sportData";
+
 export default function Sports() {
     return (
         <div>
@@ -7,7 +12,11 @@ export default function Sports() {
                 <title>CB Photography | Sports</title>
             </Head>
 
-            <h1>Sports Page</h1>
+            <Navbar />
+
+            <Gallery title="Sports" data={sportData} />
+
+            <Footer />
         </div>
     );
 }

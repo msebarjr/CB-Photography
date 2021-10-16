@@ -6,7 +6,7 @@ import styles from "../styles/Gallery.module.css";
 
 function Gallery(props) {
     const [modal, setModal] = useState(false);
-    const [tempImgSrc, setTempImgSrc] = useState("");
+    const [tempImgSrc, setTempImgSrc] = useState();
 
     const getImageHandler = (image) => {
         setTempImgSrc(image);
@@ -24,16 +24,23 @@ function Gallery(props) {
                                 : styles.modal
                         }
                     >
-                        <Image
-                            className={styles.modal_img}
-                            src={tempImgSrc}
-                            alt="Hello"
-                            width={900}
-                            height={900}
-                            objectFit="cover"
-                            // objectPosition={img.position ? item.position : ""}
-                            // layout="responsive"
-                        />
+                        <div className={styles.modal_img}>
+                            <Image
+                                src={tempImgSrc.image}
+                                alt={tempImgSrc.alt}
+                                width={
+                                    tempImgSrc.fwidth
+                                    // tempImgSrc.width > 700
+                                    //     ? 1300
+                                    //     : tempImgSrc.height > 800
+                                    //     ? 500
+                                    //     : 600
+                                }
+                                height={tempImgSrc.fheight}
+                                objectFit="cover"
+                                objectPosition={tempImgSrc.position}
+                            />
+                        </div>
 
                         <IoCloseOutline onClick={() => setModal(false)} />
                     </div>
@@ -48,7 +55,7 @@ function Gallery(props) {
                         <div
                             className={styles.pics}
                             key={index}
-                            onClick={() => getImageHandler(item.image)}
+                            onClick={() => getImageHandler(item)}
                         >
                             <Image
                                 src={item.image}
@@ -56,6 +63,7 @@ function Gallery(props) {
                                 width={item.width}
                                 height={item.height}
                                 objectFit="cover"
+                                priority={true}
                                 objectPosition={item.position}
                             />
                         </div>
