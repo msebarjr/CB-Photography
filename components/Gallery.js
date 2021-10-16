@@ -29,14 +29,9 @@ function Gallery(props) {
                                 src={tempImgSrc.image}
                                 alt={tempImgSrc.alt}
                                 width={
-                                    tempImgSrc.fwidth
-                                    // tempImgSrc.width > 700
-                                    //     ? 1300
-                                    //     : tempImgSrc.height > 800
-                                    //     ? 500
-                                    //     : 600
+                                    tempImgSrc.fwidth ? tempImgSrc.fwidth : 1300
                                 }
-                                height={tempImgSrc.fheight}
+                                height={900}
                                 objectFit="cover"
                                 objectPosition={tempImgSrc.position}
                             />

@@ -4,6 +4,7 @@ export const headshotData = [
         alt: "Amanda caceres",
         position: "center center",
         width: 550,
+        fwidth: 700,
         height: 700,
     },
     {
@@ -18,13 +19,15 @@ export const headshotData = [
         alt: "Doctor headshot photo",
         position: "center 15%",
         width: 550,
+        fwidth: 700,
         height: 700,
     },
     {
         image: "/../public/images/headshots/exotic.jpg",
         alt: "Headshot photo",
-        position: "right bottom",
+        position: "right top",
         width: 550,
+        fwidth: 850,
         height: 700,
     },
     {
@@ -46,13 +49,15 @@ export const headshotData = [
         alt: "Man in red jacket headshot photo",
         position: "center top",
         width: 550,
+        fwidth: 800,
         height: 750,
     },
     {
         image: "/../public/images/headshots/pink-hair.jpg",
         alt: "Woman in pink hair headshot photo",
-        position: "center center",
+        position: "center 10%",
         width: 550,
+        fwidth: 900,
         height: 550,
     },
     {
@@ -60,6 +65,7 @@ export const headshotData = [
         alt: "Stevi from INKAngel headshot photo",
         position: "center top",
         width: 550,
+        fwidth: 700,
         height: 700,
     },
     {
@@ -67,6 +73,7 @@ export const headshotData = [
         alt: "Woman headshot photo",
         position: "center top",
         width: 550,
+        fwidth: 1000,
         height: 600,
     },
     {
@@ -74,6 +81,7 @@ export const headshotData = [
         alt: "Woman headshot photo",
         position: "center top",
         width: 550,
+        fwidth: 750,
         height: 700,
     },
     {
@@ -88,6 +96,7 @@ export const headshotData = [
         alt: "Woman headshot photo",
         position: "center top",
         width: 550,
+        fwidth: 1000,
         height: 500,
     },
     {
@@ -95,6 +104,7 @@ export const headshotData = [
         alt: "Woman looking away headshot photo",
         position: "center top",
         width: 700,
+        fwidth: 950,
         height: 800,
     },
 ];

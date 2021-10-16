@@ -4,6 +4,7 @@ export const landscapeData = [
         alt: "Beach at night",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -11,6 +12,7 @@ export const landscapeData = [
         alt: "Beach at night with moon",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -18,6 +20,7 @@ export const landscapeData = [
         alt: "Photo of boardwalk Ocean City, Nj",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -25,6 +28,7 @@ export const landscapeData = [
         alt: "Boat on the beach in Ocean City, Nj",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -32,6 +36,7 @@ export const landscapeData = [
         alt: "Bridge overlooking the ocean at night",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -39,6 +44,7 @@ export const landscapeData = [
         alt: "Cloudy sunrise on the pier in deerfield beach, Florida",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -46,6 +52,7 @@ export const landscapeData = [
         alt: "Ferris wheel by the boardwalk in Ocean City, NJ",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -53,6 +60,7 @@ export const landscapeData = [
         alt: "Mountains in North Carolina",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -60,6 +68,7 @@ export const landscapeData = [
         alt: "Boardwalk in Ocean City, NJ",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -67,6 +76,7 @@ export const landscapeData = [
         alt: "Sunrise over the pier in Deerfield Beach, FL.",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
     {
@@ -74,6 +84,7 @@ export const landscapeData = [
         alt: "Sunset over the pier in Deerfield Beach, FL.",
         position: "center center",
         width: 800,
+        fwidth: 1600,
         height: 500,
     },
 ];

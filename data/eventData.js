@@ -4,6 +4,7 @@ export const eventData = [
         alt: "All white group photo with drinks",
         position: "center bottom",
         width: 600,
+        fwidth: 1100,
         height: 500,
     },
     {
@@ -11,6 +12,7 @@ export const eventData = [
         alt: "Woman in all white with drink",
         position: "center top",
         width: 550,
+        fwidth: 700,
         height: 700,
     },
     {
@@ -23,8 +25,9 @@ export const eventData = [
     {
         image: "/../public/images/events/dj-45th-birthday4.jpg",
         alt: "All white birthday party group photo",
-        position: "right bottom",
+        position: "right 10%",
         width: 550,
+        fwidth: 1000,
         height: 700,
     },
     {
@@ -39,6 +42,7 @@ export const eventData = [
         alt: "Dj photo",
         position: "center center",
         width: 550,
+        fwidth: 600,
         height: 700,
     },
     {
@@ -46,13 +50,15 @@ export const eventData = [
         alt: "Sweet 16 in white and pink dress",
         position: "center bottom",
         width: 550,
+        fwidth: 800,
         height: 700,
     },
     {
         image: "/../public/images/events/faith-sweet16-2.jpg",
         alt: "Sweet 16 in white and pink dress waving",
-        position: "center center",
+        position: "center 40%",
         width: 550,
+        fwidth: 900,
         height: 700,
     },
     {
@@ -60,6 +66,7 @@ export const eventData = [
         alt: "Grandfather and granddaughter dancing at sweet 16",
         position: "center center",
         width: 500,
+        fwidth: 700,
         height: 850,
     },
     {
@@ -67,6 +74,7 @@ export const eventData = [
         alt: "Grandfather and grandaughter dancing at sweet 16",
         position: "left center",
         width: 500,
+        fwidth: 700,
         height: 700,
     },
     {
@@ -74,6 +82,7 @@ export const eventData = [
         alt: "Sweet 16 girl sitting in a throne chair",
         position: "center center",
         width: 700,
+        fwidth: 750,
         height: 800,
     },
 ];
