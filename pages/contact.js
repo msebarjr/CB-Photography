@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 import ContactForm from "../components/form/ContactForm";
 import ContactInfo from "../components/form/ContactInfo";
 import Hero from "../components/Hero";
-import ContactHeroImage from "../public/images/landscapes/group-on-bench-looking-at-horizon.jpg";
+import ContactHeroImage from "../public/images/group-on-bench-looking-at-horizon.jpg";
 
 import styles from "../styles/Contact.module.css";
 

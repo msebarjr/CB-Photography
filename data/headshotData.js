@@ -1,6 +1,6 @@
 export const headshotData = [
     {
-        image: "/../public/images/headshots/amanda-caceres.jpg",
+        image: "/images/headshots/amanda-caceres.jpg",
         alt: "Amanda caceres",
         position: "center center",
         width: 550,
@@ -8,14 +8,14 @@ export const headshotData = [
         height: 700,
     },
     {
-        image: "/../public/images/headshots/avery.jpg",
+        image: "/images/headshots/avery.jpg",
         alt: "Avery headshot photo",
         position: "center bottom",
         width: 550,
         height: 500,
     },
     {
-        image: "/../public/images/headshots/doctor.jpg",
+        image: "/images/headshots/doctor.jpg",
         alt: "Doctor headshot photo",
         position: "center 15%",
         width: 550,
@@ -23,7 +23,7 @@ export const headshotData = [
         height: 700,
     },
     {
-        image: "/../public/images/headshots/exotic.jpg",
+        image: "/images/headshots/exotic.jpg",
         alt: "Headshot photo",
         position: "right top",
         width: 550,
@@ -31,21 +31,21 @@ export const headshotData = [
         height: 700,
     },
     {
-        image: "/../public/images/headshots/kid-smiling.jpg",
+        image: "/images/headshots/kid-smiling.jpg",
         alt: "Kid smiling headshot photo",
         position: "center top",
         width: 850,
         height: 600,
     },
     {
-        image: "/../public/images/headshots/man-holding-glasses.jpg",
+        image: "/images/headshots/man-holding-glasses.jpg",
         alt: "Man holding sunglasses",
         position: "80% center",
         width: 850,
         height: 700,
     },
     {
-        image: "/../public/images/headshots/man-red-jacket.jpg",
+        image: "/images/headshots/man-red-jacket.jpg",
         alt: "Man in red jacket headshot photo",
         position: "center top",
         width: 550,
@@ -53,7 +53,7 @@ export const headshotData = [
         height: 750,
     },
     {
-        image: "/../public/images/headshots/pink-hair.jpg",
+        image: "/images/headshots/pink-hair.jpg",
         alt: "Woman in pink hair headshot photo",
         position: "center 10%",
         width: 550,
@@ -61,7 +61,7 @@ export const headshotData = [
         height: 550,
     },
     {
-        image: "/../public/images/headshots/stevi-inkangel.jpg",
+        image: "/images/headshots/stevi-inkangel.jpg",
         alt: "Stevi from INKAngel headshot photo",
         position: "center top",
         width: 550,
@@ -69,7 +69,7 @@ export const headshotData = [
         height: 700,
     },
     {
-        image: "/../public/images/headshots/woman-headshot.jpg",
+        image: "/images/headshots/woman-headshot.jpg",
         alt: "Woman headshot photo",
         position: "center top",
         width: 550,
@@ -77,7 +77,7 @@ export const headshotData = [
         height: 600,
     },
     {
-        image: "/../public/images/headshots/woman-headshot2.jpg",
+        image: "/images/headshots/woman-headshot2.jpg",
         alt: "Woman headshot photo",
         position: "center top",
         width: 550,
@@ -85,14 +85,14 @@ export const headshotData = [
         height: 700,
     },
     {
-        image: "/../public/images/headshots/woman-headshot3.jpg",
+        image: "/images/headshots/woman-headshot3.jpg",
         alt: "Woman headshot photo",
         position: "left top",
         width: 900,
         height: 600,
     },
     {
-        image: "/../public/images/headshots/woman-smiling.jpg",
+        image: "/images/headshots/woman-smiling.jpg",
         alt: "Woman headshot photo",
         position: "center top",
         width: 550,
@@ -100,7 +100,7 @@ export const headshotData = [
         height: 500,
     },
     {
-        image: "/../public/images/headshots/women-looking-away.jpg",
+        image: "/images/headshots/women-looking-away.jpg",
         alt: "Woman looking away headshot photo",
         position: "center top",
         width: 700,

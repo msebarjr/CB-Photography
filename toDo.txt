@@ -1,4 +1,115 @@
-Setup contact form via formsubmit.io
+Alter sizes of all images according to lightbox render which is found in dev tools once image is in lightbox mode
 Animations
 Look over all fonts and styles
 Metadata on all images
+
+
+
+
+
+
+<div className={styles.wrapper}>
+                <div className={styles.row}>
+                    <div className={styles.category}>
+                        <Link href="/portfolio/editorials">
+                            <a>
+                                <Image
+                                    src="/images/editorials/noah-plitt.jpg"
+                                    alt="Noah Plitt"
+                                    objectFit="cover"
+                                    objectPosition="center 10%"
+                                    width="450"
+                                    height="550"
+                                    layout="responsive"
+                                />
+                                <p>Editorials</p>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={styles.category}>
+                        <Link href="/portfolio/headshots">
+                            <a>
+                                <Image
+                                    src="/images/headshots/exotic.jpg"
+                                    alt="Headshot Photo"
+                                    objectFit="cover"
+                                    objectPosition="right top"
+                                    width="450"
+                                    height="550"
+                                    layout="responsive"
+                                />
+                                <p>Headshots</p>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+                <div className={styles.row}>
+                    <div className={styles.category}>
+                        <Link href="/portfolio/sports">
+                            <a>
+                                <Image
+                                    src="/images/sport.jpg"
+                                    alt="Basketball layup"
+                                    objectFit="cover"
+                                    objectPosition="center 10%"
+                                    width="450"
+                                    height="550"
+                                    layout="responsive"
+                                />
+                                <p>Sports</p>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={styles.category}>
+                        <Link href="/portfolio/portraits">
+                            <a>
+                                <Image
+                                    src="/images/portrait.jpg"
+                                    alt="Woman and son photo"
+                                    objectFit="cover"
+                                    objectPosition="center center"
+                                    width="450"
+                                    height="550"
+                                    layout="responsive"
+                                />
+                                <p>Headshots</p>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+                <div className={styles.column_wrapper}>
+                    <div className={styles.column}>
+                        <Link href="/portfolio/events">
+                            <a>
+                                <Image
+                                    src="/images/events/dj-45th-birthday5.jpg"
+                                    alt="Woman and son photo"
+                                    objectFit="cover"
+                                    objectPosition="center 70%"
+                                    width="1030"
+                                    height="400"
+                                    layout="responsive"
+                                />
+                                <p>Events</p>
+                            </a>
+                        </Link>
+                    </div>
+
+                    <div className={styles.column}>
+                        <Link href="/portfolio/landscapes">
+                            <a>
+                                <Image
+                                    src="/images/landscapes/bridge-at-night-over-ocean.jpg"
+                                    alt="Bridge over the ocean at night"
+                                    objectFit="cover"
+                                    objectPosition="center center"
+                                    width="1030"
+                                    height="400"
+                                    layout="responsive"
+                                />
+                                <p>Landscapes</p>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+            </div>
