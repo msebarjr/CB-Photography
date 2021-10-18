@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import Navbar from "../components/navigation/Navbar";
 import Footer from "../components/footer/Footer";
+import HomeHeader from "../components/HomeHeader";
+import { homeData } from "../data/homeData";
 
 export default function Home() {
     return (
@@ -11,7 +13,9 @@ export default function Home() {
             </Head>
 
             <Navbar />
-            <h1>Homepage</h1>
+
+            <HomeHeader images={homeData} />
+
             <Footer />
         </>
     );
