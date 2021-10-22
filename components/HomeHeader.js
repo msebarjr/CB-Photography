@@ -6,20 +6,21 @@ import styles from "../styles/HomeHeader.module.css";
 function HomeHeader(props) {
     const [isImageReady, setIsImageReady] = useState(false);
 
-    // const onLoadCallBack = (e) => {
-    //     setIsImageReady(true);
-    //     typeof onLoad === "function" && onLoad(e);
-    // };
+    const onLoadCallBack = (e) => {
+        setIsImageReady(true);
+        typeof onLoad === "function" && onLoad(e);
+    };
     return (
         <section className={styles.home_hero}>
-            {/* {props.images.map((image, index) => {
+            {props.images.map((image, index) => {
                 return (
-                    <div className={styles.home_image} key={index}>
-                        {/* <Image
+                    <div className={styles.home_image_container} key={index}>
+                        <Image
+                            className={styles.home_image}
                             src={image.image}
                             alt={image.alt}
-                            width="450"
-                            height="400"
+                            width="399"
+                            height="318"
                             objectFit="cover"
                             objectPosition={image.position}
                             onLoad={(event) => {
@@ -34,13 +35,16 @@ function HomeHeader(props) {
                                     setIsImageReady(true);
                                 }
                             }}
-                        /> */}
-            {/* <img src={image.image} alt={image.alt} />
-                    </div> */}
-            {/* );
-            })} */}{" "}
-            {/* */}
-            <div className={styles.img_container}>
+                        />
+                    </div>
+                );
+            })}
+
+            <div className={styles.overlap}>
+                <h1>CB Photography</h1>
+            </div>
+
+            {/* <div className={styles.img_container}>
                 <img
                     src="/images/editorials/ayindei.jpg"
                     // alt={image.alt}
@@ -98,7 +102,7 @@ function HomeHeader(props) {
             </div>
             <div className={styles.overlap}>
                 <h1>CB Photography</h1>
-            </div>
+            </div> */}
         </section>
     );
 }

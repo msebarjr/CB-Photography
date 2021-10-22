@@ -34,6 +34,7 @@ export default function Portfolio() {
                                 objectPosition="center 10%"
                                 width="350"
                                 height="425"
+                                priority
                                 // layout="responsive"
                             />
                             <p>Editorials</p>
@@ -50,6 +51,7 @@ export default function Portfolio() {
                                 objectPosition="right top"
                                 width="350"
                                 height="425"
+                                priority
                                 // layout="responsive"
                             />
                             <p>Headshots</p>
@@ -66,6 +68,7 @@ export default function Portfolio() {
                                 objectPosition="center 10%"
                                 width="350"
                                 height="425"
+                                priority
                                 // layout="responsive"
                             />
                             <p>Sports</p>
@@ -82,6 +85,7 @@ export default function Portfolio() {
                                 objectPosition="center center"
                                 width="350"
                                 height="425"
+                                priority
                                 // layout="responsive"
                             />
                             <p>Portraits</p>
@@ -100,6 +104,7 @@ export default function Portfolio() {
                                 objectPosition="center 60%"
                                 width="900"
                                 height="550"
+                                priority
                                 // layout="responsive"
                             />
                             <p>Events</p>
@@ -118,6 +123,7 @@ export default function Portfolio() {
                                     objectPosition="center center"
                                     width="900"
                                     height="550"
+                                    // priority={true}
                                     // layout="fill"
                                 />
                                 <p>Landscapes</p>

@@ -46,10 +46,22 @@ textarea {
     width: 100%;
     padding: 0 10rem;
 }
+/* 
+div > .rec-arrow {
+    background-color: goldenrod;
+} */
 
-.rec.rec-arrow {
-    color: goldenrod;
+div:hover > .rec-arrow:hover {
+    background-color: goldenrod;
 }
+
+div:active > .rec-arrow:active {
+    background-color: goldenrod;
+}
+
+/* .rec.rec-arrow {
+    color: goldenrod;
+} */
 
 .rec.rec-dot_active {
     background: goldenrod;

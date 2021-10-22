@@ -1,103 +1,89 @@
 .home_hero {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    /* -webkit-column-count: 4;
+    -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
     -webkit-column-width: 25%;
     -moz-column-width: 25%;
-    column-width: 25%; */
+    column-width: 25%;
+    gap: 0;
     position: relative;
 }
 
-/* .home_image {
-    width: 400px;
-    height: 350px;
-    margin-bottom: -0.1rem;
+.overlap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
 }
 
-.home_image img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    animation: fadeIn 5s;
+.overlap h1 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    color: rgba(255, 255, 255, 1);
+    animation: fadeInHeading 7s;
+}
+
+.home_image_container {
+    margin-bottom: -0.1rem;
+    transition: ease-in-out;
+}
+
+/* .home_image {
+    animation: fadeIn1 5s;
 } */
 
-.img_container {
+/* .img_container {
     width: 25%;
-    height: 350px;
-}
+    height: 50%;
+    height: auto;
+    max-height: 350px; 
+} */
 
-.img1 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: center 30%;
-    transition: ease-in-out;
+.home_image_container:nth-child(1) {
     animation: fadeIn1 5s;
 }
-.img2 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: center top;
-    transition: ease-in-out;
+
+.home_image_container:nth-child(2) {
     animation: fadeIn2 5s;
 }
-.img3 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: center center;
+
+.home_image_container:nth-child(3) {
     animation: fadeIn3 5s;
 }
-.img4 {
-    object-fit: cover;
-    object-position: center 10%;
-    width: 100%;
-    height: 100%;
+
+.home_image_container:nth-child(4) {
     animation: fadeIn4 5s;
 }
-.img5 {
-    object-fit: cover;
-    object-position: center 10%;
-    width: 100%;
-    height: 100%;
+
+.home_image_container:nth-child(5) {
     animation: fadeIn5 5s;
 }
-.img6 {
-    object-fit: cover;
-    object-position: center top;
-    width: 100%;
-    height: 100%;
+.home_image_container:nth-child(6) {
     animation: fadeIn6 5s;
 }
-.img7 {
-    object-fit: cover;
-    object-position: center 40%;
-    width: 100%;
-    height: 100%;
+.home_image_container:nth-child(7) {
     animation: fadeIn7 5s;
 }
-.img8 {
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
-    height: 100%;
+.home_image_container:nth-child(8) {
     animation: fadeIn8 5s;
 }
 
 @keyframes fadeIn1 {
     0% {
         opacity: 0;
-        transform: scale(0);
+        transform: translateX(-400px);
     }
 
     100% {
         opacity: 1;
-        transform: scale(1);
+        transform: translateX(0);
     }
 }
 @keyframes fadeIn2 {
@@ -189,23 +175,45 @@
     }
 }
 
-.overlap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1400px) {
+    .overlap h1 {
+        font-size: 6rem;
+    }
 }
 
-.overlap h1 {
-    text-transform: uppercase;
-    font-size: 8rem;
-    font-weight: 500;
-    letter-spacing: 1rem;
-    color: rgba(255, 255, 255, 1);
-    animation: fadeInHeading 7s;
-    transition: ease-in-out;
+@media screen and (max-width: 1200px) {
+    .overlap h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .overlap h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .overlap h1 {
+        font-size: 1.65rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .overlap h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+    }
+}
+@media screen and (max-width: 319px) {
+    .overlap h1 {
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
 }

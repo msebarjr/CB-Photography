@@ -65,7 +65,7 @@ function NavList(props) {
             <li className={styles.nav_item}>
                 <Link href="/contact" scroll={true}>
                     <a className={styles.contact} onClick={closeMenu}>
-                        <Button>Contact </Button>
+                        <Button>Contact</Button>
                     </a>
                 </Link>
             </li>
