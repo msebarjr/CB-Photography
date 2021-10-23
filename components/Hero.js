@@ -9,7 +9,7 @@ function Hero(props) {
                 src={props.image}
                 alt={props.alt}
                 width={1600}
-                height={400}
+                height={500}
                 priority
                 layout="responsive"
                 objectFit="cover"

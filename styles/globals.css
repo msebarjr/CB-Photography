@@ -10,7 +10,7 @@ body {
     font-weight: 400;
     line-height: 1;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -39,6 +39,7 @@ textarea {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .container {
@@ -46,13 +47,23 @@ textarea {
     padding: 0 10rem;
 }
 
-.rec.rec-arrow {
-    color: goldenrod;
+div:hover > .rec-arrow:hover {
+    background-color: goldenrod;
+    border-radius: 50%;
+}
+
+div:active > .rec-arrow:active {
+    background-color: goldenrod;
 }
 
 .rec.rec-dot_active {
     background: goldenrod;
 }
+
+.rec.rec-arrow {
+    border-radius: 0;
+}
+
 
 /* 320px — 480px for mobile devices,
    481px — 768px for iPads & tablets,
@@ -87,5 +98,9 @@ textarea {
 @media screen and (max-width: 768px) {
     .container {
         padding: 0;
+    }
+
+    .rec.rec-arrow {
+        display: none;
     }
 }

@@ -1,4 +1,4 @@
-Setup contact form via formsubmit.io
+Alter sizes of all images according to lightbox render which is found in dev tools once image is in lightbox mode
 Animations
 Look over all fonts and styles
 Metadata on all images

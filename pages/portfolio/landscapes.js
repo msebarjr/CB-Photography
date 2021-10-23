@@ -1,5 +1,10 @@
 import Head from "next/head";
 
+import Navbar from "../../components/navigation/Navbar";
+import Footer from "../../components/footer/Footer";
+import Gallery from "../../components/Gallery";
+import { landscapeData } from "../../data/landscapeData";
+
 export default function Landscapes() {
     return (
         <div>
@@ -7,7 +12,11 @@ export default function Landscapes() {
                 <title>CB Photography | Landscapes</title>
             </Head>
 
-            <h1>Landscapes Page</h1>
+            <Navbar />
+
+            <Gallery title="Landscapes" data={landscapeData} />
+
+            <Footer />
         </div>
     );
 }

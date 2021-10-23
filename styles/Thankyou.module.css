@@ -1,0 +1,176 @@
+.thankyou {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 244, 244, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankyou_wrapper {
+    width: 50%;
+    max-width: 750px;
+    background-color: rgba(6, 6, 6, 0.7);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 0 2rem;
+}
+
+.heading {
+    margin-top: 2rem;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.heading h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.motto {
+    line-height: 1.5;
+    margin: 4rem 0;
+}
+
+.motto p {
+    font-size: 1.5rem;
+}
+
+.capture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.capture span {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem;
+}
+
+.message {
+    margin-bottom: 4rem;
+}
+
+.message p {
+    line-height: 1.75;
+    font-size: 1.25rem;
+    margin: 0 4rem;
+}
+
+.btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 1rem 7rem;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn:hover {
+    transform: scale(1.125);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1024px) {
+    .thankyou_wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thankyou_wrapper {
+        width: 80%;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .heading h3 {
+        font-size: 1.5rem;
+    }
+
+    .motto p {
+        font-size: 0.95rem;
+    }
+
+    .message p {
+        font-size: 0.75rem;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .thankyou_wrapper {
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .heading h3 {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    .motto {
+        margin: 2rem 0;
+    }
+
+    .motto p {
+        font-size: 1rem;
+    }
+
+    .capture {
+        font-size: 1rem;
+        margin: 0.75rem 0;
+    }
+
+    .capture span {
+        margin: 0 0.75rem;
+    }
+
+    .message p {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 1rem 5rem;
+    }
+}

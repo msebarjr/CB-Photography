@@ -13,6 +13,8 @@ import styles from "../styles/About.module.css";
 import AboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
 import ProfileImage from "../public/images/conrad.jpg";
 import CameraImage from "../public/images/camera.jpg";
+import Navbar from "../components/navigation/Navbar";
+import Footer from "../components/footer/Footer";
 
 export default function About() {
     return (
@@ -20,7 +22,7 @@ export default function About() {
             <Head>
                 <title>CB Photography | About</title>
             </Head>
-
+            <Navbar />
             <Hero image={AboutHeroImage} alt="Ocean City, NJ Boardwalk" />
 
             <div className="container">
@@ -88,6 +90,7 @@ export default function About() {
                     />
                 </div>
             </div>
+            <Footer />
         </>
     );
 }
