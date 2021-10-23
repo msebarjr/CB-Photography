@@ -1,9 +1,9 @@
 .container {
     width: 100%;
-    margin-top: -0.3rem;
-    background-color: rgba(244, 244, 244, 1);
+    /* margin-top: -0.3rem; */
+    /* background-color: rgb(250, 249, 249); */
     /* background-color: rgba(250, 248, 249, 1); */
-    padding: 3rem 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +98,14 @@
         height: 250px;
     }
 
+    .award span {
+        font-size: 1.125rem;
+    }
+
+    .award svg {
+        font-size: 2rem;
+    }
+
     .motto {
         margin-left: 5rem;
         width: 40%;
@@ -105,6 +113,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .profile_image_container {
+        width: 200px;
+        height: 200px;
+    }
+
     .motto {
         margin-left: 3rem;
         width: 40%;

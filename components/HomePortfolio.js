@@ -6,9 +6,10 @@ import styles from "../styles/HomePortfolio.module.css";
 
 function HomePortfolio(props) {
     const breakPoints = [
-        { width: 1, itemsToShow: 1 },
+        { width: 1, itemsToShow: 1, itemPadding: [0] },
         { width: 550, itemsToShow: 2 },
-        { width: 1200, itemsToShow: 3 },
+        { width: 768, itemsToShow: 3 },
+        { width: 1200, itemsToShow: 4 },
     ];
     return (
         <section className={styles.portfolio_container}>

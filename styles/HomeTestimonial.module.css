@@ -1,0 +1,131 @@
+.testimonial_container {
+    padding: 0 3rem;
+    margin-top: 3rem;
+}
+
+.testimonial_container h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.image_gallery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image {
+    position: relative;
+}
+
+.hover_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hover_container:hover {
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+.rating {
+    color: goldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text_wrapper {
+    width: 80%;
+    overflow: hidden;
+    max-height: 50%;
+}
+
+.text {
+    line-height: 1.35;
+    font-weight: 500;
+}
+
+.client {
+    font-weight: 700;
+}
+
+.rating,
+.text,
+.client {
+    display: none;
+}
+
+.hover_container:hover .rating,
+.hover_container:hover .text,
+.hover_container:hover .client {
+    display: block;
+}
+
+.link {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.link p {
+    font-size: 1rem;
+}
+
+.link p:nth-child(1) {
+    letter-spacing: 1px;
+}
+
+.link p:nth-child(2) {
+    font-size: 2.5rem;
+    margin-left: 0.75rem;
+    margin-bottom: 0.65rem;
+}
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1024px) {
+    .image {
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial_container h1 {
+        margin-bottom: 2rem;
+    }
+
+    .image_gallery {
+        padding: 0 1rem;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial_container h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .image_gallery {
+        padding: 0;
+    }
+}

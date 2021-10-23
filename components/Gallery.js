@@ -101,7 +101,6 @@ function Gallery(props) {
                                 width={item.width}
                                 height={item.height}
                                 objectFit="cover"
-                                priority={true}
                                 objectPosition={item.position}
                                 onClick={() => openLightboxOnSlide(index + 1)}
                             />
