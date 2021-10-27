@@ -8,6 +8,7 @@
 
 .info_wrapper p {
     line-height: 1.75;
+    margin-left: 3rem;
 }
 
 /* 320px — 480px for mobile devices,
@@ -45,6 +46,11 @@
     .footer_info_title,
     .info_wrapper p {
         font-size: 0.7rem;
+    }
+
+    .info_wrapper p {
+        text-align: center;
+        margin-left: 0;
     }
 
     .info_wrapper {

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-// import styles from "../styles/Hero.module.css";
-
 function Hero(props) {
     return (
         <section style={{ zIndex: "-1" }}>

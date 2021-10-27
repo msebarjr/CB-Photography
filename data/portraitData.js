@@ -75,8 +75,8 @@ export const portraitData = [
         height: 500,
     },
     {
-        image: "/images/portraits/woman-sitting-on-floor.jpg",
-        alt: "Woman sitting on floor against wall",
+      image: "/images/portraits/woman-sitting-on-table.jpg",
+      alt: "Woman sitting on table posing",
         position: "center center",
         width: 800,
         height: 500,

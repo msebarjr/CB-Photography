@@ -34,8 +34,6 @@ export default function Portfolio() {
                                 objectPosition="center 10%"
                                 width="350"
                                 height="425"
-                                priority
-                                // layout="responsive"
                             />
                             <p>Editorials</p>
                         </a>
@@ -51,8 +49,6 @@ export default function Portfolio() {
                                 objectPosition="right top"
                                 width="350"
                                 height="425"
-                                priority
-                                // layout="responsive"
                             />
                             <p>Headshots</p>
                         </a>
@@ -68,8 +64,6 @@ export default function Portfolio() {
                                 objectPosition="center 10%"
                                 width="350"
                                 height="425"
-                                priority
-                                // layout="responsive"
                             />
                             <p>Sports</p>
                         </a>
@@ -85,8 +79,6 @@ export default function Portfolio() {
                                 objectPosition="center center"
                                 width="350"
                                 height="425"
-                                priority
-                                // layout="responsive"
                             />
                             <p>Portraits</p>
                         </a>
@@ -104,8 +96,6 @@ export default function Portfolio() {
                                 objectPosition="center 60%"
                                 width="900"
                                 height="550"
-                                priority
-                                // layout="responsive"
                             />
                             <p>Events</p>
                         </a>
@@ -123,8 +113,6 @@ export default function Portfolio() {
                                     objectPosition="center center"
                                     width="900"
                                     height="550"
-                                    // priority={true}
-                                    // layout="fill"
                                 />
                                 <p>Landscapes</p>
                             </div>

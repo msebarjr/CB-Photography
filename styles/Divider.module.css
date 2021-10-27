@@ -3,3 +3,17 @@
     height: 2px;
     background-color: rgb(180, 177, 177);
 }
+
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
+
+@media screen and (max-width: 1600px) {
+    .divider {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

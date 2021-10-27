@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Button from "./Button";
+
 import { FaAward } from "react-icons/fa";
 import styles from "../styles/HomeProfile.module.css";
 

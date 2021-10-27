@@ -11,6 +11,7 @@
 
 .slide {
     position: relative;
+    cursor: pointer;
 }
 
 .slide_title {
@@ -69,6 +70,7 @@
 
 @media screen and (max-width: 1024px) {
     .portfolio_container {
+        margin-top: 1rem;
         padding: 1rem;
     }
 

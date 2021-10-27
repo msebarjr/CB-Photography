@@ -1,8 +1,6 @@
-import React, { useState, useReducer, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import styles from "../../styles/ContactForm.module.css";
-
-const emailChecker = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const isEmpty = (value) => value.trim() === "";
 const isValidPhone = (value) =>
@@ -57,7 +55,7 @@ function ContactForm() {
         <form
             onSubmit={submitHandler}
             className={styles.form}
-            action="https://formsubmit.co/c2d051d8c6ffce0c03af37eda49392e5"
+            action="https://formsubmit.co/e4fb54bb5c9709d59006490fe07647ac"
             method="POST"
         >
             <h4>Send me a message</h4>
@@ -122,8 +120,6 @@ function ContactForm() {
                         <span>*</span>Message
                     </label>
                     <textarea
-                        name=""
-                        id=""
                         cols="30"
                         rows="10"
                         name="message"

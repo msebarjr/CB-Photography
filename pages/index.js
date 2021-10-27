@@ -11,24 +11,82 @@ import HomeTestimonial from "../components/HomeTestimonial";
 import { homeData } from "../data/homeData";
 import { homePortfolioData } from "../data/homePortfolioData";
 import { testimonialData } from "../data/testimonialData";
+import { homeEditorialData } from "../data/homeEditorialData";
+import { homeEventData } from "../data/homeEventData";
+import { homeHeadshotData } from "../data/homeHeadshotData";
+import { homeLandscapeData } from "../data/homeLandscapeData";
+import { homePortraitData } from "../data/homePortraitData";
+import { homeSportData } from "../data/homeSportData";
 import Divider from "../components/helper/Divider";
 
 export default function Home() {
     const [randomTestimonials, setRandomTestimonials] = useState([]);
+    const [randomPortfolios, setRandomPortfolios] = useState([]);
 
     useEffect(() => {
         let randomNumbers = new Set();
+
         while (randomNumbers.size < 3) {
             randomNumbers.add(
                 Math.floor(Math.random() * testimonialData.length)
             );
         }
+
         for (const rand of randomNumbers) {
             setRandomTestimonials((prevState) => [
                 ...prevState,
                 testimonialData[rand],
             ]);
         }
+
+        const randomImage = [...randomNumbers];
+
+        setRandomPortfolios([
+            {
+                ...homeEditorialData[
+                    randomImage[0] < homeEditorialData.length
+                        ? randomImage[0]
+                        : 0
+                ],
+                category: "editorials",
+            },
+            {
+                ...homeEventData[
+                    randomImage[0] < homeEventData.length ? randomImage[0] : 0
+                ],
+                category: "events",
+            },
+            {
+                ...homeHeadshotData[
+                    randomImage[0] < homeHeadshotData.length
+                        ? randomImage[0]
+                        : 0
+                ],
+                category: "headshots",
+            },
+            {
+                ...homePortraitData[
+                    randomImage[0] < homePortraitData.length
+                        ? randomImage[0]
+                        : 0
+                ],
+                category: "portraits",
+            },
+            {
+                ...homeSportData[
+                    randomImage[0] < homeSportData.length ? randomImage[0] : 0
+                ],
+                category: "sports",
+            },
+            {
+                ...homeLandscapeData[
+                    randomImage[0] < homeLandscapeData.length
+                        ? randomImage[0]
+                        : 0
+                ],
+                category: "landscapes",
+            },
+        ]);
     }, []);
 
     return (
@@ -44,7 +102,7 @@ export default function Home() {
 
             <Divider />
 
-            <HomePortfolio images={homePortfolioData} />
+            <HomePortfolio images={randomPortfolios} />
 
             <Divider />
 

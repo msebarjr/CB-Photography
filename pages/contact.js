@@ -1,4 +1,3 @@
-import React, { useReducer } from "react";
 import Head from "next/head";
 
 import Navbar from "../components/navigation/Navbar";

@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
-    background-color: rgba(244, 244, 244, 1);
+    /* background-color: rgba(244, 244, 244, 1); */
+    background-color: rgba(180, 177, 177, 0.5);
     margin-top: 5rem;
     padding: 2rem 0;
 }

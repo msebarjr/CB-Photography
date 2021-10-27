@@ -26,7 +26,6 @@ export default function About() {
             <Hero image={AboutHeroImage} alt="Ocean City, NJ Boardwalk" />
 
             <div className="container">
-                <h1 className={styles.title}>About Me</h1>
                 <div className={styles.info}>
                     <Profile
                         image={ProfileImage}

@@ -32,23 +32,24 @@ function HomePortfolio(props) {
                                         width={500}
                                         height={600}
                                         objectFit="cover"
-                                        position={image.position}
+                                        // objectPosition={image.position}
                                         draggable={false}
                                     />
+                                    <div className={styles.slide_title}>
+                                        <p>{image.category}</p>
+                                    </div>
                                 </a>
                             </Link>
-                            <div className={styles.slide_title}>
-                                <p>{image.category}</p>
-                            </div>
                         </div>
                     );
                 })}
             </Carousel>
+
             <Link href="/portfolio">
                 <a>
                     <div className={styles.link}>
                         <p>View All</p>
-                        <p>-></p>
+                        <p>-&gt;</p>
                     </div>
                 </a>
             </Link>

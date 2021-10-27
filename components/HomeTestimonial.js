@@ -44,7 +44,7 @@ function HomeTestimonial(props) {
                 <a>
                     <div className={styles.link}>
                         <p>View All</p>
-                        <p>-></p>
+                        <p>-&gt;</p>
                     </div>
                 </a>
             </Link>
