@@ -4,8 +4,6 @@ import Navbar from "../components/navigation/Navbar";
 import Footer from "../components/footer/Footer";
 import ContactForm from "../components/form/ContactForm";
 import ContactInfo from "../components/form/ContactInfo";
-import Hero from "../components/Hero";
-import ContactHeroImage from "../public/images/group-on-bench-looking-at-horizon.jpg";
 
 import styles from "../styles/Contact.module.css";
 
@@ -15,12 +13,22 @@ function Contact() {
             <Head>
                 <title>CB Photography | Contact</title>
             </Head>
+
             <Navbar />
-            <Hero
-                image={ContactHeroImage}
-                alt="Ocean City, NJ Boardwalk"
-                position="50% 30%"
-            />
+
+            <div className={styles.hero_container}>
+                <picture>
+                    <source
+                        media="(min-width: 1025px)"
+                        srcSet="images/group-on-bench-looking-at-horizon.jpg"
+                    />
+                    <img
+                        src="images/group-on-bench-looking-at-horizon-mobile.jpg"
+                        alt="Ferris wheel at Ocean City Ny Boardwalk"
+                    />
+                </picture>
+            </div>
+
             <div className="container">
                 <div className={styles.contact_container}>
                     <ContactInfo />

@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-
 
 import { FaAward } from "react-icons/fa";
 import styles from "../styles/HomeProfile.module.css";
@@ -10,14 +8,9 @@ function HomeProfile() {
         <section className={styles.container}>
             <div className={styles.profile}>
                 <div className={styles.profile_image_container}>
-                    <Image
-                        className={styles.profile_image}
+                    <img
                         src="/images/conrad-transparent.png"
                         alt="Conrad Bleus"
-                        width={300}
-                        height={300}
-                        // layout="responsive"
-                        objectFit="cover"
                     />
                 </div>
                 <div className={styles.award}>

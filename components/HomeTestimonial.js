@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 
 import { IoMdStar } from "react-icons/io";
@@ -11,14 +11,7 @@ function HomeTestimonial(props) {
             <div className={styles.image_gallery}>
                 {props.testimonials.map((testimonial, index) => (
                     <div className={styles.image} key={index}>
-                        <Image
-                            src={testimonial.image}
-                            alt={testimonial.alt}
-                            width={300}
-                            height={300}
-                            objectFit="cover"
-                            objectPosition={testimonial.position}
-                        />
+                        <img src={testimonial.mobile} alt={testimonial.alt} />
                         <div className={styles.hover_container}>
                             <div className={styles.rating}>
                                 <IoMdStar />

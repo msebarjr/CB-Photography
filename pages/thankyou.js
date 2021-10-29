@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
 import { IoCameraOutline } from "react-icons/io5";
-import ThankyouImage from "../public/images/landscapes/north-carolina-mountains.jpg";
 import styles from "../styles/Thankyou.module.css";
 
 function Thankyou() {
@@ -13,13 +11,17 @@ function Thankyou() {
                 <title>CB Photography | About</title>
             </Head>
             <div className={styles.thankyou}>
-                <Image
-                    src={ThankyouImage}
-                    alt="Thank you background image"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="30% center"
-                />
+                <picture>
+                    <source
+                        media="(min-width: 800px)"
+                        srcSet="/images/landscapes/north-carolina-mountains.jpg"
+                    />
+                    <img
+                        src="/images/landscapes/north-carolina-mountains-mobile.jpg"
+                        alt="North Carolina mountains"
+                    />
+                </picture>
+
                 <div className={styles.overlay}>
                     <div className={styles.thankyou_wrapper}>
                         <div className={styles.heading}>

@@ -8,11 +8,8 @@ import {
 
 import Profile from "../components/Profile";
 import Recognition from "../components/Recognition";
-import Hero from "../components/Hero";
 import styles from "../styles/About.module.css";
-import AboutHeroImage from "../public/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg";
-import ProfileImage from "../public/images/conrad.jpg";
-import CameraImage from "../public/images/camera.jpg";
+
 import Navbar from "../components/navigation/Navbar";
 import Footer from "../components/footer/Footer";
 
@@ -23,12 +20,24 @@ export default function About() {
                 <title>CB Photography | About</title>
             </Head>
             <Navbar />
-            <Hero image={AboutHeroImage} alt="Ocean City, NJ Boardwalk" />
+
+            <div className={styles.hero_container}>
+                <picture>
+                    <source
+                        media="(min-width: 1025px)"
+                        srcSet="/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk.jpg"
+                    />
+                    <img
+                        src="/images/landscapes/ferris-wheel-ocean-city-nj-boardwalk-mobile.jpg"
+                        alt="Ferris wheel at Ocean City Ny Boardwalk"
+                    />
+                </picture>
+            </div>
 
             <div className="container">
                 <div className={styles.info}>
                     <Profile
-                        image={ProfileImage}
+                        image="/images/conrad-mobile.jpg"
                         alt="Conrad Bleus Profile Photo"
                     />
                     <div className={styles.recognition}>
@@ -39,7 +48,7 @@ export default function About() {
                         />
                         <Recognition
                             icon={<IoStarOutline />}
-                            highlight="50+"
+                            highlight="100+"
                             text="Satisfied Clients"
                         />
                         <Recognition
@@ -83,7 +92,7 @@ export default function About() {
                         </div>
                     </div>
                     <Profile
-                        image={CameraImage}
+                        image="/images/camera.jpg"
                         alt="Stock photo of camera and photos"
                         reverse
                     />
