@@ -1,6 +1,7 @@
 .home_hero {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .overlap {
