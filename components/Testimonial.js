@@ -7,11 +7,7 @@ import styles from "../styles/Testimonial.module.css";
 function Testimonial(props) {
     return (
         <div className={styles.testimonial}>
-            <TestimonialImage
-                image={props.image}
-                alt={props.alt}
-                position={props.position}
-            />
+            <TestimonialImage mobile={props.mobile} alt={props.alt} />
             <div className={styles.rating}>
                 <IoMdStar />
                 <IoMdStar />

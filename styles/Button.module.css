@@ -7,17 +7,26 @@
     background-color: rgb(180, 177, 177);
 }
 
-.btn:hover {
-    transform: scale(1.125) translateX(0.5rem);
-    transition: all 0.3s ease-in-out;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 2px solid rgb(180, 177, 177);
-}
+/* 320px — 480px for mobile devices,
+   481px — 768px for iPads & tablets,
+   769px — 1024px for small screens like laptop,
+   1025px — 1200px for large screens like Desktops,
+   1201px and above for extra large screens like TV
+*/
 
 @media screen and (max-width: 960px) {
     .btn {
         margin-top: 2rem;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .btn:hover {
+        transform: scale(1.125) translateX(0.5rem);
+        transition: all 0.3s ease-in-out;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 2px solid rgb(180, 177, 177);
     }
 }

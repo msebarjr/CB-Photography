@@ -1,8 +1,14 @@
 .thankyou {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+.thankyou img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay {

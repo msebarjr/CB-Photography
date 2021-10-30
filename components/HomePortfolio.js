@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Carousel from "react-elastic-carousel";
 
 import styles from "../styles/HomePortfolio.module.css";
@@ -18,7 +17,7 @@ function HomePortfolio(props) {
             <Carousel
                 itemsToScroll={1}
                 breakPoints={breakPoints}
-                itemPadding={[30]}
+                itemPadding={[10]}
                 enableMouseSwipe={false}
             >
                 {props.images.map((image, index) => {
@@ -26,15 +25,8 @@ function HomePortfolio(props) {
                         <div className={styles.slide} key={index}>
                             <Link href={"/portfolio/" + `${image.category}`}>
                                 <a>
-                                    <Image
-                                        src={image.image}
-                                        alt={image.alt}
-                                        width={500}
-                                        height={600}
-                                        objectFit="cover"
-                                        // objectPosition={image.position}
-                                        draggable={false}
-                                    />
+                                    <img src={image.mobile} alt={image.alt} />
+
                                     <div className={styles.slide_title}>
                                         <p>{image.category}</p>
                                     </div>

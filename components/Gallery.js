@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image from "next/image";
+
 import FsLightbox from "fslightbox-react";
 
 import styles from "../styles/Gallery.module.css";
@@ -22,20 +22,23 @@ function Gallery(props) {
     return (
         <>
             <h1 className={styles.title}>{props.title}</h1>
-
-            <div className={styles.gallery}>
+            <div className={styles.container}>
                 {props.data.map((item, index) => {
                     return (
-                        <div className={styles.pics} key={index}>
-                            <Image
-                                src={item.image}
-                                alt={item.alt}
-                                width={item.width}
-                                height={item.height}
-                                objectFit="cover"
-                                objectPosition={item.position}
-                                onClick={() => openLightboxOnSlide(index + 1)}
-                            />
+                        <div className={styles.gallery} key={index}>
+                            <picture>
+                                <source
+                                    media="(min-width: 800px)"
+                                    srcSet={item.image}
+                                />
+                                <img
+                                    src={item.mobile}
+                                    alt={item.alt}
+                                    onClick={() =>
+                                        openLightboxOnSlide(index + 1)
+                                    }
+                                />
+                            </picture>
                         </div>
                     );
                 })}

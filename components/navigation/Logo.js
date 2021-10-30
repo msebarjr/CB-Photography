@@ -1,26 +1,19 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 
 import LogoIcon from "../../public/images/logo.png";
 import styles from "../../styles/Logo.module.css";
 
 function Logo() {
     return (
-        <>
+        <div className={styles.logo}>
             <Link href="/">
-                <a className={styles.logo}>
-                    <Image
-                        src={LogoIcon}
-                        alt="CB Photography Logo"
-                        width={48}
-                        height={56}
-                        priority
-                        layout="fixed"
-                    />
+                <a>
+                    <img src="/images/logo.png" alt="CB Photography Logo" />                    
                 </a>
             </Link>
-        </>
+        </div>
     );
 }
 

@@ -11,9 +11,7 @@ export default function Editorials() {
             <Head>
                 <title>CB Photography | Editorials</title>
             </Head>
-
             <Navbar />
-
             <Gallery title="Editorials" data={editorialData} />
 
             <Footer />

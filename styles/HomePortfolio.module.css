@@ -1,5 +1,4 @@
 .portfolio_container {
-    /* background-color: rgb(146, 140, 140); */
     padding: 3rem;
 }
 
@@ -12,6 +11,15 @@
 .slide {
     position: relative;
     cursor: pointer;
+    width: 500px;
+    height: 400px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .slide_title {
@@ -68,10 +76,21 @@
    1201px and above for extra large screens like TV
 */
 
+@media screen and (max-width: 1200px) {
+    .slide {
+        width: 400px;
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .portfolio_container {
         margin-top: 1rem;
         padding: 1rem;
+    }
+
+    .slide img {
+        object-position: center 20%;
     }
 
     .portfolio_container h1 {
@@ -88,6 +107,30 @@
 
     .portfolio_container h1 {
         font-size: 3rem;
+    }
+
+    .slide {
+        height: 350px;
+    }
+
+    .slide img {
+        object-position: center 10%;
+    }
+
+    .slide_title p {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.25rem;
+        color: rgba(218, 165, 32, 1);
+    }
+
+    .slide_title:hover {
+        display: none;
+    }
+
+    .slide_title:hover p {
+        display: none;
     }
 }
 

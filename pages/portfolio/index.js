@@ -1,11 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 
 import Navbar from "../../components/navigation/Navbar";
 import Footer from "../../components/footer/Footer";
-import PortfolioHeroImage from "../../public/images/landscapes/boat-on-beach-ocean-city-nj.jpg";
-import Hero from "../../components/Hero";
+
 import styles from "../../styles/Portfolio.module.css";
 
 export default function Portfolio() {
@@ -17,23 +15,27 @@ export default function Portfolio() {
 
             <Navbar />
 
-            <Hero
-                image={PortfolioHeroImage}
-                alt="Boat at the beach in Ocean City, NJ"
-                position="center bottom"
-            />
+            <div className={styles.hero_container}>
+                <picture>
+                    <source
+                        media="(min-width: 1025px)"
+                        srcSet="/images/landscapes/ocean-city-nj-boardwalk.jpg"
+                    />
+                    <img
+                        src="/images/landscapes/ocean-city-nj-boardwalk-mobile.jpg"
+                        alt="Boat at the beach in Ocean City, NJ"
+                    />
+                </picture>
+            </div>
 
             <div className={styles.category_container}>
                 <div className={styles.category}>
                     <Link href="/portfolio/editorials">
                         <a>
-                            <Image
-                                src="/images/editorials/noah-plitt.jpg"
+                            <img
+                                src="/images/editorials/noah-plitt-mobile.jpg"
                                 alt="Noah Plitt"
-                                objectFit="cover"
-                                objectPosition="center 10%"
-                                width="350"
-                                height="425"
+                                className={styles.img1}
                             />
                             <p>Editorials</p>
                         </a>
@@ -42,14 +44,12 @@ export default function Portfolio() {
                 <div className={styles.category}>
                     <Link href="/portfolio/headshots">
                         <a>
-                            <Image
-                                src="/images/headshots/exotic.jpg"
+                            <img
+                                src="/images/headshots/exotic-mobile.jpg"
                                 alt="Headshot Photo"
-                                objectFit="cover"
-                                objectPosition="right top"
-                                width="350"
-                                height="425"
+                                className={styles.img2}
                             />
+
                             <p>Headshots</p>
                         </a>
                     </Link>
@@ -57,14 +57,12 @@ export default function Portfolio() {
                 <div className={styles.category}>
                     <Link href="/portfolio/sports">
                         <a>
-                            <Image
-                                src="/images/sport.jpg"
+                            <img
+                                src="/images/sport-mobile.jpg"
                                 alt="Basketball layup"
-                                objectFit="cover"
-                                objectPosition="center 10%"
-                                width="350"
-                                height="425"
+                                className={styles.img3}
                             />
+
                             <p>Sports</p>
                         </a>
                     </Link>
@@ -72,31 +70,27 @@ export default function Portfolio() {
                 <div className={styles.category}>
                     <Link href="/portfolio/portraits">
                         <a>
-                            <Image
-                                src="/images/portrait.jpg"
+                            <img
+                                src="/images/portrait-mobile.jpg"
                                 alt="Woman and son photo"
-                                objectFit="cover"
-                                objectPosition="center center"
-                                width="350"
-                                height="425"
+                                className={styles.img4}
                             />
+
                             <p>Portraits</p>
                         </a>
                     </Link>
                 </div>
             </div>
+
             <div className={styles.single_container}>
                 <div className={styles.column}>
                     <Link href="/portfolio/events">
                         <a>
-                            <Image
-                                src="/images/events/dj-45th-birthday5.jpg"
+                            <img
+                                src="/images/events/dj-45th-birthday5-mobile.jpg"
                                 alt="Woman and son photo"
-                                objectFit="cover"
-                                objectPosition="center 60%"
-                                width="900"
-                                height="550"
                             />
+
                             <p>Events</p>
                         </a>
                     </Link>
@@ -105,17 +99,11 @@ export default function Portfolio() {
                 <div className={styles.column}>
                     <Link href="/portfolio/landscapes">
                         <a>
-                            <div className={styles.img}>
-                                <Image
-                                    src="/images/landscapes/bridge-at-night-over-ocean.jpg"
-                                    alt="Bridge over the ocean at night"
-                                    objectFit="cover"
-                                    objectPosition="center center"
-                                    width="900"
-                                    height="550"
-                                />
-                                <p>Landscapes</p>
-                            </div>
+                            <img
+                                src="/images/landscapes/bridge-at-night-over-ocean-mobile.jpg"
+                                alt="Bridge over the ocean at night"
+                            />
+                            <p>Landscapes</p>
                         </a>
                     </Link>
                 </div>

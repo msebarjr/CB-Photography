@@ -79,14 +79,6 @@
     text-transform: uppercase;
 }
 
-.button:hover {
-    transform: scale(1.125);
-    transition: all 0.3s ease-in-out;
-    background-color: transparent;
-    margin-left: 0.8rem;
-    border: 2px solid rgb(180, 177, 177);
-}
-
 .error {
     color: rgb(228, 23, 23);
     font-size: 0.75rem;
@@ -137,6 +129,16 @@
 
     .button {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .button:hover {
+        transform: scale(1.125);
+        transition: all 0.3s ease-in-out;
+        background-color: transparent;
+        margin-left: 0.8rem;
+        border: 2px solid rgb(180, 177, 177);
     }
 }
 

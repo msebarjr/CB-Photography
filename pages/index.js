@@ -9,7 +9,7 @@ import HomePortfolio from "../components/HomePortfolio";
 import HomeTestimonial from "../components/HomeTestimonial";
 
 import { homeData } from "../data/homeData";
-import { homePortfolioData } from "../data/homePortfolioData";
+
 import { testimonialData } from "../data/testimonialData";
 import { homeEditorialData } from "../data/homeEditorialData";
 import { homeEventData } from "../data/homeEventData";
@@ -96,7 +96,6 @@ export default function Home() {
             </Head>
 
             <Navbar />
-
             <HomeHeader images={homeData} />
             <HomeProfile />
 
