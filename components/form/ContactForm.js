@@ -134,7 +134,7 @@ function ContactForm() {
             <input
                 type="hidden"
                 name="_next"
-                value="http://localhost:3000/thankyou"
+                value="http://www.mycbphotos.com/thankyou.html"
             />
             <input type="hidden" name="_template" value="" />
 

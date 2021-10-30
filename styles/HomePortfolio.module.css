@@ -90,7 +90,7 @@
     }
 
     .slide img {
-        object-position: center center;
+        object-position: center 20%;
     }
 
     .portfolio_container h1 {
@@ -108,8 +108,13 @@
     .portfolio_container h1 {
         font-size: 3rem;
     }
+
+    .slide {
+        height: 350px;
+    }
+
     .slide img {
-        object-position: center center;
+        object-position: center 10%;
     }
 
     .slide_title p {
