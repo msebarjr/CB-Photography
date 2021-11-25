@@ -23,12 +23,7 @@ export const homePortraitData = [
         mobile: "/images/portraits/james-dwiggins-mobile.jpg",
         alt: "James Dwiggins photo",
     },
-    {
-        category: "portraits",
-        image: "/images/portraits/james-dwiggins2.jpg",
-        mobile: "/images/portraits/james-dwiggins2-mobile.jpg",
-        alt: "James Dwiggins",
-    },
+
     {
         category: "portraits",
         image: "/images/portraits/kid-with-hands-up.jpg",
@@ -85,9 +80,15 @@ export const homePortraitData = [
     },
     {
         category: "portraits",
-        image: "/images/portraits/woman-sitting-on-table.jpg",
-        mobile: "/images/portraits/woman-sitting-on-table-mobile.jpg",
-        alt: "Woman sitting on table posing",
+        image: "/images/portraits/sophia-dance.jpg",
+        mobile: "/images/portraits/sophia-dance-mobile.jpg",
+        alt: "Girl dancing",
+    },
+    {
+        category: "portraits",
+        image: "/images/portraits/sophia-dance2.jpg",
+        mobile: "/images/portraits/sophia-dance2-mobile.jpg",
+        alt: "Girl dancing",
     },
     {
         category: "portraits",

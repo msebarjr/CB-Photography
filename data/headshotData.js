@@ -19,6 +19,18 @@ export const headshotData = [
         mobile: "/images/headshots/exotic-mobile.jpg",
         alt: "Headshot photo",
     },
+
+    {
+        image: "/images/headshots/leah-and-kinkala.jpg",
+        mobile: "/images/headshots/leah-and-kinkala-mobile.jpg",
+        alt: "Doctor headshot photo",
+    },
+    {
+        image: "/images/headshots/nava-lundy.jpg",
+        mobile: "/images/headshots/nava-lundy-mobile.jpg",
+        alt: "Headshot photo",
+    },
+
     {
         image: "/images/headshots/kid-smiling.jpg",
         mobile: "/images/headshots/kid-smiling-mobile.jpg",

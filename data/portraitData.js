@@ -30,13 +30,16 @@ export const portraitData = [
         mobile: "/images/portraits/james-dwiggins-mobile.jpg",
         alt: "James Dwiggins photo",
     },
-
     {
-        image: "/images/portraits/james-dwiggins2.jpg",
-        mobile: "/images/portraits/james-dwiggins2-mobile.jpg",
-        alt: "James Dwiggins",
+        image: "/images/portraits/sophia-dance.jpg",
+        mobile: "/images/portraits/sophia-dance-mobile.jpg",
+        alt: "Girl dancing",
     },
-
+    {
+        image: "/images/portraits/sophia-dance2.jpg",
+        mobile: "/images/portraits/sophia-dance2-mobile.jpg",
+        alt: "Girl dancing",
+    },
     {
         image: "/images/portraits/kid-with-hands-up.jpg",
         mobile: "/images/portraits/kid-with-hands-up-mobile.jpg",
@@ -48,11 +51,6 @@ export const portraitData = [
         alt: "Little boy resting head on mom's shoulder",
     },
 
-    {
-        image: "/images/portraits/woman-sitting-on-table.jpg",
-        mobile: "/images/portraits/woman-sitting-on-table-mobile.jpg",
-        alt: "Woman sitting on table posing",
-    },
     {
         image: "/images/portraits/pompeo-boys-hugging.jpg",
         mobile: "/images/portraits/pompeo-boys-hugging-mobile.jpg",

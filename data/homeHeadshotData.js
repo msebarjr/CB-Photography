@@ -38,6 +38,19 @@ export const homeHeadshotData = [
 
     {
         category: "headshots",
+        image: "/images/headshots/leah-and-kinkala.jpg",
+        mobile: "/images/headshots/leah-and-kinkala-mobile.jpg",
+        alt: "Doctor headshot photo",
+    },
+    {
+        category: "headshots",
+        image: "/images/headshots/nava-lundy.jpg",
+        mobile: "/images/headshots/nava-lundy-mobile.jpg",
+        alt: "Headshot photo",
+    },
+
+    {
+        category: "headshots",
         image: "/images/headshots/man-holding-glasses.jpg",
         mobile: "/images/headshots/man-holding-glasses-mobile.jpg",
         alt: "Man holding sunglasses",
