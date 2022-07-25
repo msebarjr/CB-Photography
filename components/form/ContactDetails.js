@@ -23,7 +23,7 @@ function ContactDetails() {
                         <HiOutlinePhone className={styles.icon} />
                     </a>
                 </Link>
-                <Link href="tel:3522067453">
+                <Link href="tel:9545921621">
                     <a className={styles.text}>(954) 592-1621</a>
                 </Link>
             </div>

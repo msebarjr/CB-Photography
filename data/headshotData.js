@@ -36,6 +36,36 @@ export const headshotData = [
         mobile: "/images/headshots/kid-smiling-mobile.jpg",
         alt: "Kid smiling headshot photo",
     },
+
+    {
+        image: "/images/headshots/curly-hair-headshot.jpg",
+        mobile: "/images/headshots/curly-hair-headshot-mobile.jpg",
+        alt: "Model with curly hair headshot photo",
+    },
+
+    {
+        image: "/images/headshots/hands-in-hair.jpg",
+        mobile: "/images/headshots/hands-in-hair-mobile.jpg",
+        alt: "Model with hands in her hair headshot photo",
+    },
+
+    {
+        image: "/images/headshots/model-headshot.jpg",
+        mobile: "/images/headshots/model-headshot-mobile.jpg",
+        alt: "Model with hands in her hair headshot photo",
+    },
+
+    {
+        image: "/images/headshots/teen-model.jpg",
+        mobile: "/images/headshots/teen-model-mobile.jpg",
+        alt: "Teen model headshot",
+    },
+    {
+        image: "/images/headshots/teen-model-2.jpg",
+        mobile: "/images/headshots/teen-model-2-mobile.jpg",
+        alt: "Teen model headshot",
+    },
+
     {
         image: "/images/headshots/man-holding-glasses.jpg",
         mobile: "/images/headshots/man-holding-glasses-mobile.jpg",

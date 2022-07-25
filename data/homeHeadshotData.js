@@ -17,6 +17,40 @@ export const homeHeadshotData = [
         mobile: "/images/headshots/avery-mobile.jpg",
         alt: "Avery headshot photo",
     },
+
+    {
+        category: "headshots",
+        image: "/images/headshots/curly-hair-headshot.jpg",
+        mobile: "/images/headshots/curly-hair-headshot-mobile.jpg",
+        alt: "Model with curly hair headshot photo",
+    },
+
+    {
+        category: "headshots",
+        image: "/images/headshots/hands-in-hair.jpg",
+        mobile: "/images/headshots/hands-in-hair-mobile.jpg",
+        alt: "Model with hands in her hair headshot photo",
+    },
+
+    {
+        category: "headshots",
+        image: "/images/headshots/model-headshot.jpg",
+        mobile: "/images/headshots/model-headshot-mobile.jpg",
+        alt: "Model with hands in her hair headshot photo",
+    },
+
+    {
+        category: "headshots",
+        image: "/images/headshots/teen-model.jpg",
+        mobile: "/images/headshots/teen-model-mobile.jpg",
+        alt: "Teen model headshot",
+    },
+    {
+        category: "headshots",
+        image: "/images/headshots/teen-model-2.jpg",
+        mobile: "/images/headshots/teen-model-2-mobile.jpg",
+        alt: "Teen model headshot",
+    },
     {
         category: "headshots",
         image: "/images/headshots/doctor.jpg",
