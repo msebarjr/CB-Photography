@@ -1,9 +1,4 @@
-export const eventData = [
-    {
-        image: "/images/events/dj-45th-birthday.jpg",
-        mobile: "/images/events/dj-45th-birthday-mobile.jpg",
-        alt: "All white group photo with drinks",
-    },
+export const eventData = [  
     {
         image: "/images/events/dj-45th-birthday2.jpg",
         mobile: "/images/events/dj-45th-birthday2-mobile.jpg",
@@ -13,12 +8,7 @@ export const eventData = [
         image: "/images/events/dj-45th-birthday3.jpg",
         mobile: "/images/events/dj-45th-birthday3-mobile.jpg",
         alt: "Men in all white hugging",
-    },
-    {
-        image: "/images/events/dj-45th-birthday4.jpg",
-        mobile: "/images/events/dj-45th-birthday4-mobile.jpg",
-        alt: "All white birthday party group photo",
-    },
+    },    
     {
         image: "/images/events/dj-45th-birthday5.jpg",
         mobile: "/images/events/dj-45th-birthday5-mobile.jpg",

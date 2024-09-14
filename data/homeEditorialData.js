@@ -1,10 +1,4 @@
-export const homeEditorialData = [
-    {
-        category: "editorials",
-        image: "/images/home/man-at-the-beach.jpg",
-        mobile: "/images/home/man-at-the-beach-mobile.jpg",
-        alt: "Man posing at the beach",
-    },
+export const homeEditorialData = [   
     {
         category: "editorials",
         image: "/images/editorials/ariana.jpg",

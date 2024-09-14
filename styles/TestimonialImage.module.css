@@ -2,10 +2,10 @@
     width: 175px;
     height: 175px;
     margin-top: -5rem;
-}
-
-.image_container img {
-    border-radius: 50%;
+  }
+  
+  .image_container img {
+  border-radius: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
