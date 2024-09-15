@@ -1,4 +1,3 @@
-// Needs 8 photos
 export const homeData = [
   {
     image: '/images/editorials/ayindei.jpg',
@@ -11,15 +10,16 @@ export const homeData = [
     mobile: '/images/editorials/noah-plitt-mobile.jpg',
     alt: 'Noah Plitt',
   },
-
   {
     image: '/images/headshots/kid-smiling.jpg',
     mobile: '/images/headshots/kid-smiling-mobile.jpg',
     alt: 'Kid smiling in har',
   },
-
-  // Need to insert photo here
-
+  {
+    image: '/images/headshots/amanda-caceres.jpg',
+    mobile: '/images/headshots/amanda-caceres-mobile.jpg',
+    alt: 'Woman posing in black longsleeve dress',
+  },
   {
     image: '/images/headshots/exotic.jpg',
     mobile: '/images/headshots/exotic-mobile.jpg',
