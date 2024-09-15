@@ -2,17 +2,17 @@ export const portraitData = [
   {
     image: '/images/portraits/ashley-and-chelsea-finals-2.jpg',
     mobile: '/images/portraits/ashley-and-chelsea-finals-2-mobile.jpg',
-    alt: 'Beat street dance team group photo',
+    alt: 'Woman in black business suit',
   },
   {
     image: '/images/portraits/ashley-and-chelsea-finals.jpg',
-    mobile: '/images/portraits/ashley-and-chelsea-final-mobile.jpg',
-    alt: 'Beat street dance team group photo',
+    mobile: '/images/portraits/ashley-and-chelsea-finals-mobile.jpg',
+    alt: 'Twins laying down head to head',
   },
   {
     image: '/images/portraits/ashley-and-dog-beach.jpg',
     mobile: '/images/portraits/ashley-and-dog-beach-mobile.jpg',
-    alt: 'Beat street dance team group photo',
+    alt: 'Girl with her dog at the beacg',
   },
   {
     image: '/images/portraits/baby-on-tree.jpg',
