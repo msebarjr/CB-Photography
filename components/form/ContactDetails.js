@@ -12,9 +12,9 @@ function ContactDetails() {
         <IoLocationOutline className={styles.icon} />
         <div>
           <p className={styles.text}>CB Photography</p>
-          <p className={styles.text}>9600 W. Sample Road</p>
-          <p className={styles.text}>Suite 203</p>
-          <p className={styles.text}>Coral Springs, FL. 33065</p>
+          <p className={styles.text}>1401 North University Drive</p>
+          <p className={styles.text}>Suite 408B</p>
+          <p className={styles.text}>Coral Springs, FL. 33071</p>
         </div>
       </div>
       <div className={styles.icon_text}>
